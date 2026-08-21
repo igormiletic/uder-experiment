@@ -1,0 +1,230 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0032"
+    },
+    "CreationDateTime": "2026-09-10"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0032"
+        },
+        "DocumentDateTime": "2026-09-10",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HR454905158",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Meridian Manufacturing Inc",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT350303005",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Adriatic Packaging Ltd",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 28843.74,
+          "TaxTotalAmount": 832.4,
+          "AllowanceTotalAmount": 618.98,
+          "ChargeTotalAmount": 7.7,
+          "GrossAmount": 29676.14,
+          "PayableAmount": 29676.14
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 7491.75,
+            "TaxAmount": 749.18
+          },
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 20954.31,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 416.12,
+            "TaxAmount": 83.22
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 18.44
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH61002543524507241"
+          },
+          "PaymentReference": "RF79830842"
+        },
+        "DueDateTime": "2026-11-09",
+        "ReferenceDocumentID": "PO-184650",
+        "ContractReferenceDocumentID": "CTR-1982"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-41271",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 19.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 425.91
+          },
+          "LineExtensionAmount": 7491.75,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 600.54
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-84543",
+                "type": "SKU"
+              },
+              {
+                "ID": "1736584802500",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 48.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 364.34
+          },
+          "LineExtensionAmount": 17496.02,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Charge",
+              "Amount": 7.7
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-83196",
+                "type": "SKU"
+              },
+              {
+                "ID": "7661577676735",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 4.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 104.03
+          },
+          "LineExtensionAmount": 416.12,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-49832",
+                "type": "SKU"
+              },
+              {
+                "ID": "2964164429125",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 11.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 314.39
+          },
+          "LineExtensionAmount": 3458.29,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

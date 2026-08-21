@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0012",
+      "issueDate": "2026-07-30",
+      "dueDate": "2026-08-13"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-593472",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT153972463"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE584146696"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-16879"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 384.07,
+          "netAmount": 4992.91,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-22294"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9280139816825"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 6.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 413.1,
+          "netAmount": 2478.6,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-50356"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4343931563662"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 461.9,
+          "netAmount": 6004.7,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-35336"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7703106857638"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 12.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 28.06,
+          "netAmount": 336.72,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 13788.65,
+      "taxAmount": 2162.11,
+      "allowanceTotal": 24.28,
+      "chargeTotal": 0.0,
+      "grossAmount": 15950.76,
+      "payableAmount": 15950.76,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 7808.23,
+          "taxAmount": 1561.64
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 6004.7,
+          "taxAmount": 600.47
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH63004161063086137",
+      "reference": null
+    }
+  }
+}

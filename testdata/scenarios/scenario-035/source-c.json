@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0035"
+    },
+    "CreationDateTime": "2026-01-12"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0035"
+        },
+        "DocumentDateTime": "2026-01-12",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SI234197150",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Balkan Logistics d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 1466.55,
+          "TaxTotalAmount": 293.31,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 1759.86,
+          "PayableAmount": 1759.86
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 1466.55,
+            "TaxAmount": 293.31
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH21008294933049479"
+          }
+        },
+        "DueDateTime": "2026-02-11"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-85640",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 45.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 32.59
+          },
+          "LineExtensionAmount": 1466.55,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

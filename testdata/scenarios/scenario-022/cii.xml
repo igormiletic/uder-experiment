@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice
+    xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter><ram:ID>urn:cen.eu:en16931:2017</ram:ID></ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>INV-2026-0022</ram:ID>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime><udt:DateTimeString format="102">20260310</udt:DateTimeString></ram:IssueDateTime>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>1</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:SellerAssignedID>SKU-60117</ram:SellerAssignedID><ram:Name>Circuit Protection Module</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>165.64</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="LTR">13</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>2153.32</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem><ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>2</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:GlobalID schemeID="0160">4180527974005</ram:GlobalID><ram:SellerAssignedID>SKU-24854</ram:SellerAssignedID><ram:Name>Pallet Wrap Film Roll</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>235.62</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="MTR">41</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeAllowanceCharge><ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator><ram:ActualAmount>639.81</ram:ActualAmount></ram:SpecifiedTradeAllowanceCharge><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>9020.61</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:BuyerReference>PO-658856</ram:BuyerReference>
+            <ram:SellerTradeParty><ram:Name>Moravia Plastics a.s.</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">CZ913972019</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>11000</ram:PostcodeCode><ram:LineOne>Fabricka 8</ram:LineOne><ram:CityName>Prague</ram:CityName><ram:CountryID>CZ</ram:CountryID></ram:PostalTradeAddress></ram:SellerTradeParty>
+            <ram:BuyerTradeParty><ram:Name>Summit Retail Holdings</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">HU520829600</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>1051</ram:PostcodeCode><ram:LineOne>Mainstrasse 1</ram:LineOne><ram:CityName>Budapest</ram:CityName><ram:CountryID>HU</ram:CountryID></ram:PostalTradeAddress></ram:BuyerTradeParty>
+            <ram:BuyerOrderReferencedDocument><ram:IssuerAssignedID>PO-658856</ram:IssuerAssignedID></ram:BuyerOrderReferencedDocument>
+            
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery/>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementPaymentMeans><ram:TypeCode>48</ram:TypeCode><ram:PayeePartyCreditorFinancialAccount><ram:IBANID>CH65001037288875358</ram:IBANID></ram:PayeePartyCreditorFinancialAccount></ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradePaymentTerms><ram:DueDateDateTime><udt:DateTimeString format="102">20260424</udt:DateTimeString></ram:DueDateDateTime></ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradeAllowanceCharge><ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator><ram:ActualAmount>3.38</ram:ActualAmount></ram:SpecifiedTradeAllowanceCharge>
+            <ram:ApplicableTradeTax><ram:CalculatedAmount>215.33</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>2153.32</ram:BasisAmount><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:ApplicableTradeTax><ram:CalculatedAmount>1804.12</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>9020.61</ram:BasisAmount><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>11170.55</ram:LineTotalAmount>
+                <ram:AllowanceTotalAmount>643.19</ram:AllowanceTotalAmount>
+                <ram:ChargeTotalAmount>0.00</ram:ChargeTotalAmount>
+                <ram:TaxBasisTotalAmount>11170.55</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">2019.45</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>13190.00</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>13190.00</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

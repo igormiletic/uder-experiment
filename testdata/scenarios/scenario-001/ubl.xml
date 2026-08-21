@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0001</cbc:ID>
+    <cbc:IssueDate>2026-04-17</cbc:IssueDate>
+    <cbc:DueDate>2026-05-01</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-649031</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Moravia Plastics a.s.</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Ulica Kralja Petra 5</cbc:StreetName><cbc:CityName>Zurich</cbc:CityName><cbc:PostalZone>8000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>CH</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>CH860511160</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Solaris Energy Group</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Ulica Kralja Petra 5</cbc:StreetName><cbc:CityName>Prague</cbc:CityName><cbc:PostalZone>11000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>CZ</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>CZ817872674</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>CARD</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH77006813413178604</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    <cac:AllowanceCharge><cbc:ChargeIndicator>true</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">7.94</cbc:Amount></cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">5225.71</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">19925.36</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">3985.07</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal><cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">12406.40</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">1240.64</cbc:TaxAmount><cac:TaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">32339.70</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">32339.70</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">37565.41</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">318.85</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">7.94</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">37565.41</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="MTR">49</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">19925.36</cbc:LineExtensionAmount><cac:Item><cbc:Name>Industrial Gear Reducer</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-61489</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">406.64</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="KGM">25</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">4789.92</cbc:LineExtensionAmount><cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">91.33</cbc:Amount></cac:AllowanceCharge><cac:Item><cbc:Name>Insulated Copper Cable (100m)</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-81828</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">195.25</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>3</cbc:ID><cbc:InvoicedQuantity unitCode="LTR">40</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">7616.48</cbc:LineExtensionAmount><cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">227.52</cbc:Amount></cac:AllowanceCharge><cac:Item><cbc:Name>Insulated Copper Cable (100m)</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-59413</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">196.10</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

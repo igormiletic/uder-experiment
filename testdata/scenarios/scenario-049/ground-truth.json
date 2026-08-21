@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0049",
+      "issueDate": "2026-05-16",
+      "dueDate": "2026-06-15"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT350971636"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      },
+      "customer": {
+        "name": "Orion Pharmaceuticals SA",
+        "identifiers": [],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-55112"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 27.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 8.84,
+          "netAmount": 238.68,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 238.68,
+      "taxAmount": 47.74,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 286.42,
+      "payableAmount": 286.42,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 238.68,
+          "taxAmount": 47.74
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH77006322546049742",
+      "reference": null
+    }
+  }
+}

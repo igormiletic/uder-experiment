@@ -1,0 +1,213 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0027"
+    },
+    "CreationDateTime": "2026-08-25"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0027"
+        },
+        "DocumentDateTime": "2026-08-25",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT242884287",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Vertex Construction plc",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HR845410741",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 15748.51,
+          "TaxTotalAmount": 1610.35,
+          "AllowanceTotalAmount": 729.52,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 17358.86,
+          "PayableAmount": 17358.86
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 354.98,
+            "TaxAmount": 71.0
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 15393.53,
+            "TaxAmount": 1539.35
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH70007979094041069"
+          }
+        },
+        "DueDateTime": "2026-10-09",
+        "ReferenceDocumentID": "PO-956000"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-45723",
+                "type": "SKU"
+              },
+              {
+                "ID": "5102703478167",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 1.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 354.98
+          },
+          "LineExtensionAmount": 354.98,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-10823",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 43.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 15.27
+          },
+          "LineExtensionAmount": 656.61,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-87681",
+                "type": "SKU"
+              },
+              {
+                "ID": "9508510235909",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 24.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 81.17
+          },
+          "LineExtensionAmount": 1948.08,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-66257",
+                "type": "SKU"
+              },
+              {
+                "ID": "5024447095362",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 36.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 375.51
+          },
+          "LineExtensionAmount": 12788.84,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 729.52
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

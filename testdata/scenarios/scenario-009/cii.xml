@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice
+    xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter><ram:ID>urn:cen.eu:en16931:2017</ram:ID></ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>INV-2026-0009</ram:ID>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime><udt:DateTimeString format="102">20260221</udt:DateTimeString></ram:IssueDateTime>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>1</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:GlobalID schemeID="0160">9327213142014</ram:GlobalID><ram:SellerAssignedID>SKU-15773</ram:SellerAssignedID><ram:Name>PVC Conduit Pipe</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>132.45</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="EA">9</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>1192.05</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem><ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>2</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:GlobalID schemeID="0160">6133224915699</ram:GlobalID><ram:SellerAssignedID>SKU-40149</ram:SellerAssignedID><ram:Name>PVC Conduit Pipe</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>423.70</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="MTR">2</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeAllowanceCharge><ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator><ram:ActualAmount>23.61</ram:ActualAmount></ram:SpecifiedTradeAllowanceCharge><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>823.79</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:BuyerReference>PO-897097</ram:BuyerReference>
+            <ram:SellerTradeParty><ram:Name>Pannonia Chemicals Kft.</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">PL273582282</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>00-001</ram:PostcodeCode><ram:LineOne>Ulica Kralja Petra 5</ram:LineOne><ram:CityName>Warsaw</ram:CityName><ram:CountryID>PL</ram:CountryID></ram:PostalTradeAddress></ram:SellerTradeParty>
+            <ram:BuyerTradeParty><ram:Name>Blue Harbor Trading Co</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">PL915490311</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>00-001</ram:PostcodeCode><ram:LineOne>Via Roma 22</ram:LineOne><ram:CityName>Warsaw</ram:CityName><ram:CountryID>PL</ram:CountryID></ram:PostalTradeAddress></ram:BuyerTradeParty>
+            <ram:BuyerOrderReferencedDocument><ram:IssuerAssignedID>PO-897097</ram:IssuerAssignedID></ram:BuyerOrderReferencedDocument>
+            
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery/>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementPaymentMeans><ram:TypeCode>58</ram:TypeCode><ram:PayeePartyCreditorFinancialAccount><ram:IBANID>CH52006117799522186</ram:IBANID></ram:PayeePartyCreditorFinancialAccount></ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradePaymentTerms><ram:DueDateDateTime><udt:DateTimeString format="102">20260407</udt:DateTimeString></ram:DueDateDateTime></ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradeAllowanceCharge><ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator><ram:ActualAmount>5.01</ram:ActualAmount></ram:SpecifiedTradeAllowanceCharge>
+            <ram:ApplicableTradeTax><ram:CalculatedAmount>119.21</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>1192.05</ram:BasisAmount><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:ApplicableTradeTax><ram:CalculatedAmount>164.76</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>823.79</ram:BasisAmount><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>2010.83</ram:LineTotalAmount>
+                <ram:AllowanceTotalAmount>28.62</ram:AllowanceTotalAmount>
+                <ram:ChargeTotalAmount>0.00</ram:ChargeTotalAmount>
+                <ram:TaxBasisTotalAmount>2010.83</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">283.97</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>2294.80</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>2294.80</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

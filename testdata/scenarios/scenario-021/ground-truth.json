@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0021",
+      "issueDate": "2026-02-08",
+      "dueDate": "2026-03-25"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-784779",
+      "contractReference": "CTR-5786"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SK592418292"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT220448337"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-15183"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 11.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 16.16,
+          "netAmount": 158.18,
+          "allowanceTotal": 19.58,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-61425"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 21.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 450.83,
+          "netAmount": 8403.64,
+          "allowanceTotal": 1063.79,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-51205"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7651079656532"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 10.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 58.49,
+          "netAmount": 526.99,
+          "allowanceTotal": 75.55,
+          "chargeTotal": 17.64
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-37708"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2524242126175"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 39.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 393.14,
+          "netAmount": 15332.46,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 24377.11,
+      "taxAmount": 3964.84,
+      "allowanceTotal": 1205.57,
+      "chargeTotal": 20.13,
+      "grossAmount": 28341.95,
+      "payableAmount": 28341.95,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 15490.64,
+          "taxAmount": 3098.13
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 8403.64,
+          "taxAmount": 840.36
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 526.99,
+          "taxAmount": 26.35
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH20001699619852025",
+      "reference": "RF56621731"
+    }
+  }
+}

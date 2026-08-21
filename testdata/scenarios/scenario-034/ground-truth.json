@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0034",
+      "issueDate": "2026-03-06",
+      "dueDate": "2026-03-20"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-623841",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR180754051"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE794897371"
+          }
+        ],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-71470"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4381537513202"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 28.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 235.79,
+          "netAmount": 6477.76,
+          "allowanceTotal": 124.36,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-89550"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2111210152646"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 33.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 193.72,
+          "netAmount": 5615.21,
+          "allowanceTotal": 777.55,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-89049"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8032844815928"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 14.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 162.94,
+          "netAmount": 2281.16,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-89614"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "5367567255842"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 8.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 35.33,
+          "netAmount": 282.64,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-85749"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3076954995917"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 1.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 366.43,
+          "netAmount": 366.43,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 15007.81,
+      "taxAmount": 1679.66,
+      "allowanceTotal": 917.3,
+      "chargeTotal": 0.0,
+      "grossAmount": 16687.47,
+      "payableAmount": 16687.47,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 12092.97,
+          "taxAmount": 1209.3
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 2281.16,
+          "taxAmount": 456.23
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 282.64,
+          "taxAmount": 14.13
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 366.43,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH46006285113546161",
+      "reference": "RF82027877"
+    }
+  }
+}

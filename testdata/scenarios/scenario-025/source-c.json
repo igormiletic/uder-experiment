@@ -1,0 +1,272 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0025"
+    },
+    "CreationDateTime": "2026-01-21"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0025"
+        },
+        "DocumentDateTime": "2026-01-21",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE185984642",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ561404985",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Helvetia Fine Instruments AG",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 48808.72,
+          "TaxTotalAmount": 3446.82,
+          "AllowanceTotalAmount": 4266.56,
+          "ChargeTotalAmount": 27.97,
+          "GrossAmount": 52255.54,
+          "PayableAmount": 52255.54
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 14379.18,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 34468.24,
+            "TaxAmount": 3446.82
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 47.42
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 8.72
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH34002108682245349"
+          },
+          "PaymentReference": "RF75383104"
+        },
+        "DueDateTime": "2026-02-20",
+        "ReferenceDocumentID": "PO-828718",
+        "ContractReferenceDocumentID": "CTR-5828"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-18288",
+                "type": "SKU"
+              },
+              {
+                "ID": "7961657237759",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 38.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 439.22
+          },
+          "LineExtensionAmount": 14379.18,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 2311.18
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-66944",
+                "type": "SKU"
+              },
+              {
+                "ID": "5967546962676",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 36.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 425.41
+          },
+          "LineExtensionAmount": 15314.76,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-88567",
+                "type": "SKU"
+              },
+              {
+                "ID": "5372952723785",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 17.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 108.49
+          },
+          "LineExtensionAmount": 1844.33,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-57777",
+                "type": "SKU"
+              },
+              {
+                "ID": "7181598923481",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 33.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 311.28
+          },
+          "LineExtensionAmount": 9189.51,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 1082.73
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-56973",
+                "type": "SKU"
+              },
+              {
+                "ID": "1367225409398",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 29.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 307.78
+          },
+          "LineExtensionAmount": 8119.64,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 825.23
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 19.25
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

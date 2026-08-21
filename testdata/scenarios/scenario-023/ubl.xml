@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0023</cbc:ID>
+    <cbc:IssueDate>2026-05-23</cbc:IssueDate>
+    <cbc:DueDate>2026-07-07</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-825864</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Pannonia Chemicals Kft.</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Mainstrasse 1</cbc:StreetName><cbc:CityName>Vienna</cbc:CityName><cbc:PostalZone>1010</cbc:PostalZone><cac:Country><cbc:IdentificationCode>AT</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>AT535124448</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Solaris Energy Group</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Industriestrasse 12</cbc:StreetName><cbc:CityName>Berlin</cbc:CityName><cbc:PostalZone>10115</cbc:PostalZone><cac:Country><cbc:IdentificationCode>DE</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>DE631603047</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>SEPA_CREDIT_TRANSFER</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH94006427420501698</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    <cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">21.14</cbc:Amount></cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">6861.84</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">34309.21</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">6861.84</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">34288.07</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">34288.07</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">41149.91</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">21.14</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">41149.91</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="LTR">41</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">6531.30</cbc:LineExtensionAmount><cac:Item><cbc:Name>Precision Bearing Set</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-65303</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">1041912638775</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">159.30</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="LTR">20</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">2809.60</cbc:LineExtensionAmount><cac:Item><cbc:Name>LED Panel Light</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-26836</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">3250423362285</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">140.48</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>3</cbc:ID><cbc:InvoicedQuantity unitCode="KGM">45</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">7537.05</cbc:LineExtensionAmount><cac:Item><cbc:Name>Aluminium Extrusion Profile</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-93753</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">4582548659942</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">167.49</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>4</cbc:ID><cbc:InvoicedQuantity unitCode="BOX">42</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">17431.26</cbc:LineExtensionAmount><cac:Item><cbc:Name>Industrial Gear Reducer</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-10873</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">9400925945044</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">415.03</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

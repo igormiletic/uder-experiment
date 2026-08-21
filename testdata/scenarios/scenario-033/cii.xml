@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice
+    xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter><ram:ID>urn:cen.eu:en16931:2017</ram:ID></ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>INV-2026-0033</ram:ID>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime><udt:DateTimeString format="102">20260116</udt:DateTimeString></ram:IssueDateTime>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>1</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:SellerAssignedID>SKU-14571</ram:SellerAssignedID><ram:Name>Precision Bearing Set</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>114.76</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="EA">39</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>4475.64</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem><ram:IncludedSupplyChainTradeLineItem><ram:AssociatedDocumentLineDocument><ram:LineID>2</ram:LineID></ram:AssociatedDocumentLineDocument><ram:SpecifiedTradeProduct><ram:SellerAssignedID>SKU-65607</ram:SellerAssignedID><ram:Name>Pallet Wrap Film Roll</ram:Name></ram:SpecifiedTradeProduct><ram:SpecifiedLineTradeAgreement><ram:NetPriceProductTradePrice><ram:ChargeAmount>196.19</ram:ChargeAmount></ram:NetPriceProductTradePrice></ram:SpecifiedLineTradeAgreement><ram:SpecifiedLineTradeDelivery><ram:BilledQuantity unitCode="EA">44</ram:BilledQuantity></ram:SpecifiedLineTradeDelivery><ram:SpecifiedLineTradeSettlement><ram:ApplicableTradeTax><ram:TypeCode>VAT</ram:TypeCode><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:SpecifiedTradeSettlementLineMonetarySummation><ram:LineTotalAmount>8632.36</ram:LineTotalAmount></ram:SpecifiedTradeSettlementLineMonetarySummation></ram:SpecifiedLineTradeSettlement></ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:BuyerReference>PO-819052</ram:BuyerReference>
+            <ram:SellerTradeParty><ram:Name>Danube Steelworks d.o.o.</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">LT495038929</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>01103</ram:PostcodeCode><ram:LineOne>Fabricka 8</ram:LineOne><ram:CityName>Vilnius</ram:CityName><ram:CountryID>LT</ram:CountryID></ram:PostalTradeAddress></ram:SellerTradeParty>
+            <ram:BuyerTradeParty><ram:Name>Summit Retail Holdings</ram:Name><ram:SpecifiedTaxRegistration><ram:ID schemeID="VA">CZ331404761</ram:ID></ram:SpecifiedTaxRegistration><ram:PostalTradeAddress><ram:PostcodeCode>11000</ram:PostcodeCode><ram:LineOne>Fabricka 8</ram:LineOne><ram:CityName>Prague</ram:CityName><ram:CountryID>CZ</ram:CountryID></ram:PostalTradeAddress></ram:BuyerTradeParty>
+            <ram:BuyerOrderReferencedDocument><ram:IssuerAssignedID>PO-819052</ram:IssuerAssignedID></ram:BuyerOrderReferencedDocument>
+            
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery/>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementPaymentMeans><ram:TypeCode>48</ram:TypeCode><ram:PayeePartyCreditorFinancialAccount><ram:IBANID>CH74007337795080163</ram:IBANID></ram:PayeePartyCreditorFinancialAccount></ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradePaymentTerms><ram:DueDateDateTime><udt:DateTimeString format="102">20260130</udt:DateTimeString></ram:DueDateDateTime></ram:SpecifiedTradePaymentTerms>
+            
+            <ram:ApplicableTradeTax><ram:CalculatedAmount>895.13</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>4475.64</ram:BasisAmount><ram:CategoryCode>S</ram:CategoryCode><ram:RateApplicablePercent>20.0</ram:RateApplicablePercent></ram:ApplicableTradeTax><ram:ApplicableTradeTax><ram:CalculatedAmount>863.24</ram:CalculatedAmount><ram:TypeCode>VAT</ram:TypeCode><ram:BasisAmount>8632.36</ram:BasisAmount><ram:CategoryCode>AA</ram:CategoryCode><ram:RateApplicablePercent>10.0</ram:RateApplicablePercent></ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>13108.00</ram:LineTotalAmount>
+                <ram:AllowanceTotalAmount>0.00</ram:AllowanceTotalAmount>
+                <ram:ChargeTotalAmount>0.00</ram:ChargeTotalAmount>
+                <ram:TaxBasisTotalAmount>13108.00</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">1758.37</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>14866.37</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>14866.37</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

@@ -1,0 +1,213 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0012"
+    },
+    "CreationDateTime": "2026-07-30"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0012"
+        },
+        "DocumentDateTime": "2026-07-30",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE584146696",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT153972463",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 13788.65,
+          "TaxTotalAmount": 2162.11,
+          "AllowanceTotalAmount": 24.28,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 15950.76,
+          "PayableAmount": 15950.76
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 7808.23,
+            "TaxAmount": 1561.64
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 6004.7,
+            "TaxAmount": 600.47
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 24.28
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH63004161063086137"
+          }
+        },
+        "DueDateTime": "2026-08-13",
+        "ReferenceDocumentID": "PO-593472"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-16879",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 384.07
+          },
+          "LineExtensionAmount": 4992.91,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-22294",
+                "type": "SKU"
+              },
+              {
+                "ID": "9280139816825",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 6.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 413.1
+          },
+          "LineExtensionAmount": 2478.6,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-50356",
+                "type": "SKU"
+              },
+              {
+                "ID": "4343931563662",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 461.9
+          },
+          "LineExtensionAmount": 6004.7,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-35336",
+                "type": "SKU"
+              },
+              {
+                "ID": "7703106857638",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 12.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 28.06
+          },
+          "LineExtensionAmount": 336.72,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

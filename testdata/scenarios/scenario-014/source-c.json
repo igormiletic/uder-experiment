@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0014"
+    },
+    "CreationDateTime": "2026-08-12"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0014"
+        },
+        "DocumentDateTime": "2026-08-12",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Summit Retail Holdings",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Rue de Commerce 45"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE627586978",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Pannonia Chemicals Kft.",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 26.88,
+          "TaxTotalAmount": 5.38,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 32.26,
+          "PayableAmount": 32.26
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 26.88,
+            "TaxAmount": 5.38
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH53007724642428770"
+          }
+        },
+        "DueDateTime": "2026-09-11"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-76394",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 3.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 8.96
+          },
+          "LineExtensionAmount": 26.88,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

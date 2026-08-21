@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0030",
+      "issueDate": "2026-04-10",
+      "dueDate": "2026-04-24"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-941841",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Iberia Textiles S.A.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "RS966546458"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU458181865"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-30158"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 44.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 16.01,
+          "netAmount": 690.54,
+          "allowanceTotal": 13.9,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-97797"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4403182046035"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 42.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 219.23,
+          "netAmount": 9213.12,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 5.46
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-49013"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 10.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 352.55,
+          "netAmount": 3016.62,
+          "allowanceTotal": 508.88,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-62827"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "5686871440375"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 161.87,
+          "netAmount": 1956.39,
+          "allowanceTotal": 147.92,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-32248"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3556716870571"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 17.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 189.59,
+          "netAmount": 2836.43,
+          "allowanceTotal": 386.6,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 17681.36,
+      "taxAmount": 920.18,
+      "allowanceTotal": 1106.74,
+      "chargeTotal": 23.16,
+      "grossAmount": 18601.54,
+      "payableAmount": 18601.54,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 690.54,
+          "taxAmount": 69.05
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 17022.56,
+          "taxAmount": 851.13
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH30002725785774729",
+      "reference": "RF27403507"
+    }
+  }
+}

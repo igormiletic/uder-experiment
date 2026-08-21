@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0024",
+      "issueDate": "2026-05-16",
+      "dueDate": "2026-05-30"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-299305",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Moravia Plastics a.s.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ492374183"
+          }
+        ],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE846567185"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-20130"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 42.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 225.62,
+          "netAmount": 8941.32,
+          "allowanceTotal": 534.72,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Standard",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-61779"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 14.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 333.56,
+          "netAmount": 4669.84,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-88396"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1804076113621"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 11.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 305.02,
+          "netAmount": 3355.22,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-42934"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1679316756296"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 34.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 36.86,
+          "netAmount": 1154.25,
+          "allowanceTotal": 98.99,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-65198"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1832224468267"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 39.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 429.32,
+          "netAmount": 15357.61,
+          "allowanceTotal": 1395.37,
+          "chargeTotal": 9.5
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 33482.57,
+      "taxAmount": 1101.73,
+      "allowanceTotal": 2043.08,
+      "chargeTotal": 27.83,
+      "grossAmount": 34584.3,
+      "payableAmount": 34584.3,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 0.0,
+          "taxableAmount": 8941.32,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 4669.84,
+          "taxAmount": 933.97
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 3355.22,
+          "taxAmount": 167.76
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 16511.86,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH24003647364726724",
+      "reference": "RF70234029"
+    }
+  }
+}

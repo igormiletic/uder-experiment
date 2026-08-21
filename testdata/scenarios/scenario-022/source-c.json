@@ -1,0 +1,156 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0022"
+    },
+    "CreationDateTime": "2026-03-10"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0022"
+        },
+        "DocumentDateTime": "2026-03-10",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU520829600",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Summit Retail Holdings",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ913972019",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Moravia Plastics a.s.",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 11170.55,
+          "TaxTotalAmount": 2019.45,
+          "AllowanceTotalAmount": 643.19,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 13190.0,
+          "PayableAmount": 13190.0
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 2153.32,
+            "TaxAmount": 215.33
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 9020.61,
+            "TaxAmount": 1804.12
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 3.38
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH65001037288875358"
+          }
+        },
+        "DueDateTime": "2026-04-24",
+        "ReferenceDocumentID": "PO-658856"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-60117",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 165.64
+          },
+          "LineExtensionAmount": 2153.32,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-24854",
+                "type": "SKU"
+              },
+              {
+                "ID": "4180527974005",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 41.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 235.62
+          },
+          "LineExtensionAmount": 9020.61,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 639.81
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

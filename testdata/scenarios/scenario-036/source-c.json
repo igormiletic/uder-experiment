@@ -1,0 +1,272 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0036"
+    },
+    "CreationDateTime": "2026-04-22"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0036"
+        },
+        "DocumentDateTime": "2026-04-22",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ529130234",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Summit Retail Holdings",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT416582617",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 24285.39,
+          "TaxTotalAmount": 2019.91,
+          "AllowanceTotalAmount": 712.07,
+          "ChargeTotalAmount": 20.82,
+          "GrossAmount": 26305.3,
+          "PayableAmount": 26305.3
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 19143.44,
+            "TaxAmount": 1914.34
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 2111.46,
+            "TaxAmount": 105.57
+          },
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 3054.26,
+            "TaxAmount": 0.0
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 44.59
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 20.82
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH84003124148340368"
+          },
+          "PaymentReference": "RF22311320"
+        },
+        "DueDateTime": "2026-06-06",
+        "ReferenceDocumentID": "PO-480570",
+        "ContractReferenceDocumentID": "CTR-6752"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-74774",
+                "type": "SKU"
+              },
+              {
+                "ID": "8293585945541",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 1.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 289.74
+          },
+          "LineExtensionAmount": 248.94,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 40.8
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-85269",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 6.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 373.1
+          },
+          "LineExtensionAmount": 2111.46,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 127.14
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-96871",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 9.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 234.78
+          },
+          "LineExtensionAmount": 1810.26,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 302.76
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-93050",
+                "type": "SKU"
+              },
+              {
+                "ID": "1671295707419",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 3.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 480.26
+          },
+          "LineExtensionAmount": 1244.0,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 196.78
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-75324",
+                "type": "SKU"
+              },
+              {
+                "ID": "9182127942105",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 50.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 377.89
+          },
+          "LineExtensionAmount": 18894.5,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

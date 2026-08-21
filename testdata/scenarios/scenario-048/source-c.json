@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0048"
+    },
+    "CreationDateTime": "2026-04-14"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0048"
+        },
+        "DocumentDateTime": "2026-04-14",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Vertex Construction plc",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Rue de Commerce 45"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PL182558208",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Helvetia Fine Instruments AG",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 17531.52,
+          "TaxTotalAmount": 3506.3,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 21037.82,
+          "PayableAmount": 21037.82
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 17531.52,
+            "TaxAmount": 3506.3
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH83006633295046415"
+          }
+        },
+        "DueDateTime": "2026-05-14"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-39499",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 48.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 365.24
+          },
+          "LineExtensionAmount": 17531.52,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

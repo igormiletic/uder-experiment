@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0039",
+      "issueDate": "2026-01-09",
+      "dueDate": "2026-02-08"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-752901",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Nordic Timber Supply AB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PL206468908"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      },
+      "customer": {
+        "name": "Northgate Retail Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI315600775"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-44172"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3904028488915"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 10.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 370.85,
+          "netAmount": 3708.5,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-27255"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 46.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 116.42,
+          "netAmount": 5259.4,
+          "allowanceTotal": 95.92,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 8956.62,
+      "taxAmount": 1793.58,
+      "allowanceTotal": 107.2,
+      "chargeTotal": 0.0,
+      "grossAmount": 10750.2,
+      "payableAmount": 10750.2,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 8967.9,
+          "taxAmount": 1793.58
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH98004271556921970",
+      "reference": null
+    }
+  }
+}

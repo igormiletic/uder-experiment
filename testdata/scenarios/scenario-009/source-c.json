@@ -1,0 +1,160 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0009"
+    },
+    "CreationDateTime": "2026-02-21"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0009"
+        },
+        "DocumentDateTime": "2026-02-21",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PL915490311",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Blue Harbor Trading Co",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PL273582282",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Pannonia Chemicals Kft.",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 2010.83,
+          "TaxTotalAmount": 283.97,
+          "AllowanceTotalAmount": 28.62,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 2294.8,
+          "PayableAmount": 2294.8
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 1192.05,
+            "TaxAmount": 119.21
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 823.79,
+            "TaxAmount": 164.76
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 5.01
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH52006117799522186"
+          }
+        },
+        "DueDateTime": "2026-04-07",
+        "ReferenceDocumentID": "PO-897097"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-15773",
+                "type": "SKU"
+              },
+              {
+                "ID": "9327213142014",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 9.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 132.45
+          },
+          "LineExtensionAmount": 1192.05,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-40149",
+                "type": "SKU"
+              },
+              {
+                "ID": "6133224915699",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 2.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 423.7
+          },
+          "LineExtensionAmount": 823.79,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 23.61
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

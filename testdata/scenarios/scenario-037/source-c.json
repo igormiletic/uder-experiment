@@ -1,0 +1,274 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0037"
+    },
+    "CreationDateTime": "2026-07-25"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0037"
+        },
+        "DocumentDateTime": "2026-07-25",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE716965176",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SK761226720",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 15568.29,
+          "TaxTotalAmount": 344.89,
+          "AllowanceTotalAmount": 1239.97,
+          "ChargeTotalAmount": 19.86,
+          "GrossAmount": 15913.18,
+          "PayableAmount": 15913.18
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 11837.21,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 593.68,
+            "TaxAmount": 29.68
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 3152.05,
+            "TaxAmount": 315.21
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 14.65
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH61006809427356582"
+          },
+          "PaymentReference": "RF72207174"
+        },
+        "DueDateTime": "2026-08-08",
+        "ReferenceDocumentID": "PO-989528"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-99970",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 32.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 171.1
+          },
+          "LineExtensionAmount": 5313.58,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 167.84
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 6.22
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-83130",
+                "type": "SKU"
+              },
+              {
+                "ID": "2892203620327",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 5.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 234.34
+          },
+          "LineExtensionAmount": 1171.7,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-77470",
+                "type": "SKU"
+              },
+              {
+                "ID": "1793935483603",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 17.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 34.12
+          },
+          "LineExtensionAmount": 593.68,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Charge",
+              "Amount": 13.64
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-63075",
+                "type": "SKU"
+              },
+              {
+                "ID": "1416336353160",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 30.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 120.14
+          },
+          "LineExtensionAmount": 3152.05,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 452.15
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-53316",
+                "type": "SKU"
+              },
+              {
+                "ID": "7696028647971",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 38.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 156.77
+          },
+          "LineExtensionAmount": 5351.93,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 605.33
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

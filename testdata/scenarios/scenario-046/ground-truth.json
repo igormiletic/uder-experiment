@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0046",
+      "issueDate": "2026-06-06",
+      "dueDate": "2026-07-06"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Balkan Logistics d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "RS989270343"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-31158"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 41.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 224.87,
+          "netAmount": 9219.67,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 9219.67,
+      "taxAmount": 1843.93,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 11063.6,
+      "payableAmount": 11063.6,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9219.67,
+          "taxAmount": 1843.93
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH47007408892804522",
+      "reference": null
+    }
+  }
+}

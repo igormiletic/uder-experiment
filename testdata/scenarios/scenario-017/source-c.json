@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0017"
+    },
+    "CreationDateTime": "2026-09-12"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0017"
+        },
+        "DocumentDateTime": "2026-09-12",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Orion Pharmaceuticals SA",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HR526489648",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Carpathian Machinery s.r.o.",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 8908.53,
+          "TaxTotalAmount": 1781.71,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 10690.24,
+          "PayableAmount": 10690.24
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 8908.53,
+            "TaxAmount": 1781.71
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH72009669192909005"
+          }
+        },
+        "DueDateTime": "2026-10-12"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-84248",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 19.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 468.87
+          },
+          "LineExtensionAmount": 8908.53,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

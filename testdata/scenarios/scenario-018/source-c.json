@@ -1,0 +1,145 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0018"
+    },
+    "CreationDateTime": "2026-05-25"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0018"
+        },
+        "DocumentDateTime": "2026-05-25",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "RS782285475",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Orion Pharmaceuticals SA",
+          "Location": {
+            "Address": {
+              "City": "Belgrade",
+              "PostalCode": "11000",
+              "CountryCode": "RS",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "RS590177675",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Belgrade",
+              "PostalCode": "11000",
+              "CountryCode": "RS",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 19838.55,
+          "TaxTotalAmount": 3972.51,
+          "AllowanceTotalAmount": 23.99,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 23811.06,
+          "PayableAmount": 23811.06
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 19862.54,
+            "TaxAmount": 3972.51
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 23.99
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH68002371191486767"
+          }
+        },
+        "DueDateTime": "2026-06-24",
+        "ReferenceDocumentID": "PO-508976"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-20837",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 38.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 455.63
+          },
+          "LineExtensionAmount": 17313.94,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-18722",
+                "type": "SKU"
+              },
+              {
+                "ID": "8429452578969",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 20.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 127.43
+          },
+          "LineExtensionAmount": 2548.6,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

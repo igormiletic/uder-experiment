@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0015",
+      "issueDate": "2026-08-23",
+      "dueDate": "2026-09-22"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-970479",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Rheinland Elektronik GmbH",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI480855345"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE621965476"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-26488"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 18.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 399.41,
+          "netAmount": 6861.02,
+          "allowanceTotal": 328.36,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-81593"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 7.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 292.22,
+          "netAmount": 1972.07,
+          "allowanceTotal": 76.3,
+          "chargeTotal": 2.83
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-20318"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 40.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 307.85,
+          "netAmount": 12314.0,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Reduced",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 21108.22,
+      "taxAmount": 197.21,
+      "allowanceTotal": 443.53,
+      "chargeTotal": 2.83,
+      "grossAmount": 21305.43,
+      "payableAmount": 21305.43,
+      "taxBreakdown": [
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 6861.02,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 1972.07,
+          "taxAmount": 197.21
+        },
+        {
+          "category": "Reduced",
+          "rate": 0.0,
+          "taxableAmount": 12314.0,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH24007591481786918",
+      "reference": "RF17770439"
+    }
+  }
+}

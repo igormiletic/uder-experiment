@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0020"
+    },
+    "CreationDateTime": "2026-08-16"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0020"
+        },
+        "DocumentDateTime": "2026-08-16",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Continental Foods AG",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "RS843675336",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Nordic Timber Supply AB",
+          "Location": {
+            "Address": {
+              "City": "Belgrade",
+              "PostalCode": "11000",
+              "CountryCode": "RS",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 19894.98,
+          "TaxTotalAmount": 3979.0,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 23873.98,
+          "PayableAmount": 23873.98
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 19894.98,
+            "TaxAmount": 3979.0
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH91006945120828945"
+          }
+        },
+        "DueDateTime": "2026-09-15"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-79562",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 42.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 473.69
+          },
+          "LineExtensionAmount": 19894.98,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

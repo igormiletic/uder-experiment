@@ -1,0 +1,206 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0019"
+    },
+    "CreationDateTime": "2026-07-02"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0019"
+        },
+        "DocumentDateTime": "2026-07-02",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU113046954",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Orion Pharmaceuticals SA",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ935241844",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 6955.27,
+          "TaxTotalAmount": 215.63,
+          "AllowanceTotalAmount": 163.55,
+          "ChargeTotalAmount": 8.5,
+          "GrossAmount": 7170.9,
+          "PayableAmount": 7170.9
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 589.96,
+            "TaxAmount": 29.5
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 1861.3,
+            "TaxAmount": 186.13
+          },
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 4537.44,
+            "TaxAmount": 0.0
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 41.93
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 8.5
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH83004959708562285"
+          },
+          "PaymentReference": "RF87266557"
+        },
+        "DueDateTime": "2026-07-16",
+        "ReferenceDocumentID": "PO-137954"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-24838",
+                "type": "SKU"
+              },
+              {
+                "ID": "6451769943162",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 22.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 30.27
+          },
+          "LineExtensionAmount": 589.96,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 75.98
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-58962",
+                "type": "SKU"
+              },
+              {
+                "ID": "2444752215395",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 7.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 272.42
+          },
+          "LineExtensionAmount": 1861.3,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 45.64
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-53016",
+                "type": "SKU"
+              },
+              {
+                "ID": "4601147026644",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 16.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 283.59
+          },
+          "LineExtensionAmount": 4537.44,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

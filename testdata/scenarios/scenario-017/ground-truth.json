@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0017",
+      "issueDate": "2026-09-12",
+      "dueDate": "2026-10-12"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Carpathian Machinery s.r.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR526489648"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Orion Pharmaceuticals SA",
+        "identifiers": [],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-84248"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 19.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 468.87,
+          "netAmount": 8908.53,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 8908.53,
+      "taxAmount": 1781.71,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 10690.24,
+      "payableAmount": 10690.24,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 8908.53,
+          "taxAmount": 1781.71
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH72009669192909005",
+      "reference": null
+    }
+  }
+}

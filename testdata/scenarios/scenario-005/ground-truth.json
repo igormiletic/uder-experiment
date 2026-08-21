@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0005",
+      "issueDate": "2026-07-04",
+      "dueDate": "2026-08-03"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Nordic Timber Supply AB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT515977052"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Riverside Motors GmbH",
+        "identifiers": [],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-57353"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 27.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 460.16,
+          "netAmount": 12424.32,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 12424.32,
+      "taxAmount": 2484.86,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 14909.18,
+      "payableAmount": 14909.18,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 12424.32,
+          "taxAmount": 2484.86
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH20004412872815255",
+      "reference": null
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0006",
+      "issueDate": "2026-04-21",
+      "dueDate": "2026-06-20"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-950234",
+      "contractReference": "CTR-1354"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT226459306"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      },
+      "customer": {
+        "name": "Solaris Energy Group",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PL107697312"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-73777"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9435081071377"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 46.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 33.13,
+          "netAmount": 1472.21,
+          "allowanceTotal": 51.77,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-31610"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 31.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 57.37,
+          "netAmount": 1792.38,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 13.91
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-67448"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "6846931071850"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 6.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 145.53,
+          "netAmount": 873.18,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-97370"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3008970966358"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 27.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 411.77,
+          "netAmount": 11134.38,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 16.59
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-64446"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 31.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 5.03,
+          "netAmount": 147.17,
+          "allowanceTotal": 8.76,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "6",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-71590"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3044888458237"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 46.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 343.07,
+          "netAmount": 15112.02,
+          "allowanceTotal": 682.56,
+          "chargeTotal": 13.36
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 30475.44,
+      "taxAmount": 2490.49,
+      "allowanceTotal": 798.99,
+      "chargeTotal": 43.86,
+      "grossAmount": 32965.93,
+      "payableAmount": 32965.93,
+      "taxBreakdown": [
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 16584.23,
+          "taxAmount": 829.21
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 2665.56,
+          "taxAmount": 533.12
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 11281.55,
+          "taxAmount": 1128.16
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH36007911164738830",
+      "reference": "RF61015588"
+    }
+  }
+}

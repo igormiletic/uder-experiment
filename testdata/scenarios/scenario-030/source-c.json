@@ -1,0 +1,269 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0030"
+    },
+    "CreationDateTime": "2026-04-10"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0030"
+        },
+        "DocumentDateTime": "2026-04-10",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU458181865",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Blue Harbor Trading Co",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "RS966546458",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Iberia Textiles S.A.",
+          "Location": {
+            "Address": {
+              "City": "Belgrade",
+              "PostalCode": "11000",
+              "CountryCode": "RS",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 17681.36,
+          "TaxTotalAmount": 920.18,
+          "AllowanceTotalAmount": 1106.74,
+          "ChargeTotalAmount": 23.16,
+          "GrossAmount": 18601.54,
+          "PayableAmount": 18601.54
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 690.54,
+            "TaxAmount": 69.05
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 17022.56,
+            "TaxAmount": 851.13
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 49.44
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 17.7
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH30002725785774729"
+          },
+          "PaymentReference": "RF27403507"
+        },
+        "DueDateTime": "2026-04-24",
+        "ReferenceDocumentID": "PO-941841"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-30158",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 44.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 16.01
+          },
+          "LineExtensionAmount": 690.54,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 13.9
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-97797",
+                "type": "SKU"
+              },
+              {
+                "ID": "4403182046035",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 42.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 219.23
+          },
+          "LineExtensionAmount": 9213.12,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Charge",
+              "Amount": 5.46
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-49013",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 10.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 352.55
+          },
+          "LineExtensionAmount": 3016.62,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 508.88
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-62827",
+                "type": "SKU"
+              },
+              {
+                "ID": "5686871440375",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 161.87
+          },
+          "LineExtensionAmount": 1956.39,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 147.92
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-32248",
+                "type": "SKU"
+              },
+              {
+                "ID": "3556716870571",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 17.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 189.59
+          },
+          "LineExtensionAmount": 2836.43,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 386.6
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0032",
+      "issueDate": "2026-09-10",
+      "dueDate": "2026-11-09"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-184650",
+      "contractReference": "CTR-1982"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Adriatic Packaging Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT350303005"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Meridian Manufacturing Inc",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR454905158"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-41271"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 19.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 425.91,
+          "netAmount": 7491.75,
+          "allowanceTotal": 600.54,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-84543"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1736584802500"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 48.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 364.34,
+          "netAmount": 17496.02,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 7.7
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-83196"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7661577676735"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 4.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 104.03,
+          "netAmount": 416.12,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-49832"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2964164429125"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 11.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 314.39,
+          "netAmount": 3458.29,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 28843.74,
+      "taxAmount": 832.4,
+      "allowanceTotal": 618.98,
+      "chargeTotal": 7.7,
+      "grossAmount": 29676.14,
+      "payableAmount": 29676.14,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 7491.75,
+          "taxAmount": 749.18
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 20954.31,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 416.12,
+          "taxAmount": 83.22
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH61002543524507241",
+      "reference": "RF79830842"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0039"
+    },
+    "CreationDateTime": "2026-01-09"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0039"
+        },
+        "DocumentDateTime": "2026-01-09",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SI315600775",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Northgate Retail Ltd",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PL206468908",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Nordic Timber Supply AB",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 8956.62,
+          "TaxTotalAmount": 1793.58,
+          "AllowanceTotalAmount": 107.2,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 10750.2,
+          "PayableAmount": 10750.2
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 8967.9,
+            "TaxAmount": 1793.58
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 11.28
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH98004271556921970"
+          }
+        },
+        "DueDateTime": "2026-02-08",
+        "ReferenceDocumentID": "PO-752901"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-44172",
+                "type": "SKU"
+              },
+              {
+                "ID": "3904028488915",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 10.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 370.85
+          },
+          "LineExtensionAmount": 3708.5,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-27255",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 46.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 116.42
+          },
+          "LineExtensionAmount": 5259.4,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 95.92
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

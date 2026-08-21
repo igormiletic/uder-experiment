@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0002</cbc:ID>
+    <cbc:IssueDate>2026-06-17</cbc:IssueDate>
+    <cbc:DueDate>2026-07-17</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-314464</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Moravia Plastics a.s.</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Via Roma 22</cbc:StreetName><cbc:CityName>Budapest</cbc:CityName><cbc:PostalZone>1051</cbc:PostalZone><cac:Country><cbc:IdentificationCode>HU</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>HU167271069</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Vertex Construction plc</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Fabricka 8</cbc:StreetName><cbc:CityName>Vilnius</cbc:CityName><cbc:PostalZone>01103</cbc:PostalZone><cac:Country><cbc:IdentificationCode>LT</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>LT313437262</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>SEPA_CREDIT_TRANSFER</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH25005144162240334</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    <cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">13.86</cbc:Amount></cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">6470.31</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">41086.57</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">4108.65</cbc:TaxAmount><cac:TaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal><cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">11808.28</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">2361.66</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">52880.99</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">52880.99</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">59351.30</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">13.86</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">59351.30</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="EA">39</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">17427.93</cbc:LineExtensionAmount><cac:Item><cbc:Name>Circuit Protection Module</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-81101</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">9473154283151</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">446.87</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="KGM">35</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">14642.60</cbc:LineExtensionAmount><cac:Item><cbc:Name>Pallet Wrap Film Roll</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-34735</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">9045470181612</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">418.36</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>3</cbc:ID><cbc:InvoicedQuantity unitCode="KGM">44</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">11808.28</cbc:LineExtensionAmount><cac:Item><cbc:Name>Industrial Gear Reducer</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-63666</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">2817820991787</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">268.37</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>4</cbc:ID><cbc:InvoicedQuantity unitCode="BOX">44</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">9016.04</cbc:LineExtensionAmount><cac:Item><cbc:Name>Aluminium Extrusion Profile</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-11833</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">204.91</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

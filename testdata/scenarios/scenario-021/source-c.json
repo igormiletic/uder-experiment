@@ -1,0 +1,239 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0021"
+    },
+    "CreationDateTime": "2026-02-08"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0021"
+        },
+        "DocumentDateTime": "2026-02-08",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT220448337",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SK592418292",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Helvetia Fine Instruments AG",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 24377.11,
+          "TaxTotalAmount": 3964.84,
+          "AllowanceTotalAmount": 1205.57,
+          "ChargeTotalAmount": 20.13,
+          "GrossAmount": 28341.95,
+          "PayableAmount": 28341.95
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 15490.64,
+            "TaxAmount": 3098.13
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 8403.64,
+            "TaxAmount": 840.36
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 526.99,
+            "TaxAmount": 26.35
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 46.65
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 2.49
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH20001699619852025"
+          },
+          "PaymentReference": "RF56621731"
+        },
+        "DueDateTime": "2026-03-25",
+        "ReferenceDocumentID": "PO-784779",
+        "ContractReferenceDocumentID": "CTR-5786"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-15183",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 11.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 16.16
+          },
+          "LineExtensionAmount": 158.18,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 19.58
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-61425",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 21.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 450.83
+          },
+          "LineExtensionAmount": 8403.64,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 1063.79
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-51205",
+                "type": "SKU"
+              },
+              {
+                "ID": "7651079656532",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 10.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 58.49
+          },
+          "LineExtensionAmount": 526.99,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 75.55
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 17.64
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-37708",
+                "type": "SKU"
+              },
+              {
+                "ID": "2524242126175",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 39.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 393.14
+          },
+          "LineExtensionAmount": 15332.46,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0026",
+      "issueDate": "2026-08-14",
+      "dueDate": "2026-09-13"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-483560",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Danube Steelworks d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT884731392"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT154321050"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-93922"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 22.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 275.47,
+          "netAmount": 6060.34,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-23853"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1463574011613"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 152.71,
+          "netAmount": 4886.72,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-12970"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4480210728548"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 351.87,
+          "netAmount": 4574.31,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 15508.99,
+      "taxAmount": 3104.27,
+      "allowanceTotal": 12.38,
+      "chargeTotal": 0.0,
+      "grossAmount": 18613.26,
+      "payableAmount": 18613.26,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 15521.37,
+          "taxAmount": 3104.27
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH76003200716820491",
+      "reference": null
+    }
+  }
+}

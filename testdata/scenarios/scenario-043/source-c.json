@@ -1,0 +1,100 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0043"
+    },
+    "CreationDateTime": "2026-09-07"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0043"
+        },
+        "DocumentDateTime": "2026-09-07",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Vertex Construction plc",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU310574359",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Rheinland Elektronik GmbH",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 765.59,
+          "TaxTotalAmount": 153.12,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 918.71,
+          "PayableAmount": 918.71
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 765.59,
+            "TaxAmount": 153.12
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER"
+        },
+        "DueDateTime": "2026-10-07"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-87953",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 7.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 109.37
+          },
+          "LineExtensionAmount": 765.59,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

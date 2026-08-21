@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0028",
+      "issueDate": "2026-04-03",
+      "dueDate": "2026-05-18"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-639728",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Rheinland Elektronik GmbH",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU820207610"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE760621620"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-55936"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9347890780612"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 24.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 324.35,
+          "netAmount": 7784.4,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-54866"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9123654723336"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 116.04,
+          "netAmount": 1508.52,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-91180"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 35.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 453.35,
+          "netAmount": 15826.5,
+          "allowanceTotal": 40.75,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-35944"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 45.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 152.21,
+          "netAmount": 6849.45,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 31961.1,
+      "taxAmount": 3196.89,
+      "allowanceTotal": 48.52,
+      "chargeTotal": 0.0,
+      "grossAmount": 35157.99,
+      "payableAmount": 35157.99,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 31968.87,
+          "taxAmount": 3196.89
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH32007916752947115",
+      "reference": null
+    }
+  }
+}

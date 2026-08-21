@@ -1,0 +1,332 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0040"
+    },
+    "CreationDateTime": "2026-08-07"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0040"
+        },
+        "DocumentDateTime": "2026-08-07",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ864356388",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Riverside Motors GmbH",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT195626499",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Danube Steelworks d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 42281.41,
+          "TaxTotalAmount": 3541.8,
+          "AllowanceTotalAmount": 3412.27,
+          "ChargeTotalAmount": 48.89,
+          "GrossAmount": 45823.21,
+          "PayableAmount": 45823.21
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 0.0,
+            "TaxableAmount": 5173.52,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 0.0,
+            "TaxableAmount": 9988.58,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 0.0,
+            "TaxableAmount": 2086.42,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 16655.6,
+            "TaxAmount": 3331.12
+          },
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 4213.56,
+            "TaxAmount": 210.68
+          },
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 4148.72,
+            "TaxAmount": 0.0
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 7.04
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 22.05
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH52007372436842507"
+          },
+          "PaymentReference": "RF55313344"
+        },
+        "ReferenceDocumentID": "PO-894011",
+        "ContractReferenceDocumentID": "CTR-1163"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-41108",
+                "type": "SKU"
+              },
+              {
+                "ID": "2638157752112",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 44.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 117.58
+          },
+          "LineExtensionAmount": 5173.52,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-19847",
+                "type": "SKU"
+              },
+              {
+                "ID": "1072129032956",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 23.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 449.38
+          },
+          "LineExtensionAmount": 9988.58,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 366.09
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 18.93
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-14489",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 32.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 72.45
+          },
+          "LineExtensionAmount": 2086.42,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 231.98
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-10849",
+                "type": "SKU"
+              },
+              {
+                "ID": "7614387016740",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 43.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 446.58
+          },
+          "LineExtensionAmount": 16655.6,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 2550.67
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 3.33
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-44279",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 324.12
+          },
+          "LineExtensionAmount": 4213.56,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "6",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-33777",
+                "type": "SKU"
+              },
+              {
+                "ID": "7418215306277",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 338.51
+          },
+          "LineExtensionAmount": 4148.72,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 256.49
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 4.58
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

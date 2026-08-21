@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0011</cbc:ID>
+    <cbc:IssueDate>2026-04-18</cbc:IssueDate>
+    <cbc:DueDate>2026-06-02</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-621380</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Balkan Logistics d.o.o.</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Via Roma 22</cbc:StreetName><cbc:CityName>Prague</cbc:CityName><cbc:PostalZone>11000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>CZ</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>CZ951136435</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Orion Pharmaceuticals SA</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Ulica Kralja Petra 5</cbc:StreetName><cbc:CityName>Bratislava</cbc:CityName><cbc:PostalZone>81101</cbc:PostalZone><cac:Country><cbc:IdentificationCode>SK</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>SK326969176</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>SEPA_CREDIT_TRANSFER</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH23008114834570867</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">712.63</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">2744.70</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">548.94</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal><cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">1636.88</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">163.69</cbc:TaxAmount><cac:TaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">4381.58</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">4381.58</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">5094.21</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">162.26</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">5094.21</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="LTR">14</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">2744.70</cbc:LineExtensionAmount><cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">162.26</cbc:Amount></cac:AllowanceCharge><cac:Item><cbc:Name>PVC Conduit Pipe</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-85844</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">9735491614993</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">207.64</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="EA">14</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">1636.88</cbc:LineExtensionAmount><cac:Item><cbc:Name>Aluminium Extrusion Profile</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-73370</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">116.92</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

@@ -1,0 +1,151 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0011"
+    },
+    "CreationDateTime": "2026-04-18"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0011"
+        },
+        "DocumentDateTime": "2026-04-18",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SK326969176",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Orion Pharmaceuticals SA",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ951136435",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Balkan Logistics d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 4381.58,
+          "TaxTotalAmount": 712.63,
+          "AllowanceTotalAmount": 162.26,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 5094.21,
+          "PayableAmount": 5094.21
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 2744.7,
+            "TaxAmount": 548.94
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 1636.88,
+            "TaxAmount": 163.69
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH23008114834570867"
+          }
+        },
+        "DueDateTime": "2026-06-02",
+        "ReferenceDocumentID": "PO-621380"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-85844",
+                "type": "SKU"
+              },
+              {
+                "ID": "9735491614993",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 14.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 207.64
+          },
+          "LineExtensionAmount": 2744.7,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 162.26
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-73370",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 14.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 116.92
+          },
+          "LineExtensionAmount": 1636.88,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

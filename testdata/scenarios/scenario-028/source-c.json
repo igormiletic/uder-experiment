@@ -1,0 +1,208 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0028"
+    },
+    "CreationDateTime": "2026-04-03"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0028"
+        },
+        "DocumentDateTime": "2026-04-03",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE760621620",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Blue Harbor Trading Co",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU820207610",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Rheinland Elektronik GmbH",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 31961.1,
+          "TaxTotalAmount": 3196.89,
+          "AllowanceTotalAmount": 48.52,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 35157.99,
+          "PayableAmount": 35157.99
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 31968.87,
+            "TaxAmount": 3196.89
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 7.77
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH32007916752947115"
+          }
+        },
+        "DueDateTime": "2026-05-18",
+        "ReferenceDocumentID": "PO-639728"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-55936",
+                "type": "SKU"
+              },
+              {
+                "ID": "9347890780612",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 24.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 324.35
+          },
+          "LineExtensionAmount": 7784.4,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-54866",
+                "type": "SKU"
+              },
+              {
+                "ID": "9123654723336",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 116.04
+          },
+          "LineExtensionAmount": 1508.52,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-91180",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 35.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 453.35
+          },
+          "LineExtensionAmount": 15826.5,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 40.75
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-35944",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 45.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 152.21
+          },
+          "LineExtensionAmount": 6849.45,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

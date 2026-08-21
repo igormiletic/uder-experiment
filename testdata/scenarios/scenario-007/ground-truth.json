@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0007",
+      "issueDate": "2026-07-11",
+      "dueDate": "2026-07-25"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-620404",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Balkan Logistics d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE720338945"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI471654760"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-14368"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1204617215174"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 16.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 126.42,
+          "netAmount": 1923.01,
+          "allowanceTotal": 99.71,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-13950"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7422393639802"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 49.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 283.22,
+          "netAmount": 13877.78,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 15790.48,
+      "taxAmount": 3160.16,
+      "allowanceTotal": 114.54,
+      "chargeTotal": 4.52,
+      "grossAmount": 18950.64,
+      "payableAmount": 18950.64,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 15800.79,
+          "taxAmount": 3160.16
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH42004096653981634",
+      "reference": null
+    }
+  }
+}

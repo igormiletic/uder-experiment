@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0033",
+      "issueDate": "2026-01-16",
+      "dueDate": "2026-01-30"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-819052",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Danube Steelworks d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT495038929"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Summit Retail Holdings",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ331404761"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-14571"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 39.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 114.76,
+          "netAmount": 4475.64,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-65607"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 44.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 196.19,
+          "netAmount": 8632.36,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 13108.0,
+      "taxAmount": 1758.37,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 14866.37,
+      "payableAmount": 14866.37,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 4475.64,
+          "taxAmount": 895.13
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 8632.36,
+          "taxAmount": 863.24
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH74007337795080163",
+      "reference": null
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0015"
+    },
+    "CreationDateTime": "2026-08-23"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0015"
+        },
+        "DocumentDateTime": "2026-08-23",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE621965476",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SI480855345",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Rheinland Elektronik GmbH",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 21108.22,
+          "TaxTotalAmount": 197.21,
+          "AllowanceTotalAmount": 443.53,
+          "ChargeTotalAmount": 2.83,
+          "GrossAmount": 21305.43,
+          "PayableAmount": 21305.43
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "TaxableAmount": 6861.02,
+            "TaxAmount": 0.0
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 1972.07,
+            "TaxAmount": 197.21
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 0.0,
+            "TaxableAmount": 12314.0,
+            "TaxAmount": 0.0
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 38.87
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH24007591481786918"
+          },
+          "PaymentReference": "RF17770439"
+        },
+        "DueDateTime": "2026-09-22",
+        "ReferenceDocumentID": "PO-970479"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-26488",
+                "type": "SKU"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 18.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 399.41
+          },
+          "LineExtensionAmount": 6861.02,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 328.36
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "ZeroRated",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-81593",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 7.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 292.22
+          },
+          "LineExtensionAmount": 1972.07,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 76.3
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 2.83
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-20318",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 40.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 307.85
+          },
+          "LineExtensionAmount": 12314.0,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 0.0,
+            "Exempt": true,
+            "ExemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+          }
+        }
+      ]
+    }
+  }
+}

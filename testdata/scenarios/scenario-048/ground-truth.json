@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0048",
+      "issueDate": "2026-04-14",
+      "dueDate": "2026-05-14"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PL182558208"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-39499"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 48.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 365.24,
+          "netAmount": 17531.52,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 17531.52,
+      "taxAmount": 3506.3,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 21037.82,
+      "payableAmount": 21037.82,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 17531.52,
+          "taxAmount": 3506.3
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH83006633295046415",
+      "reference": null
+    }
+  }
+}

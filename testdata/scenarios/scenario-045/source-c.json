@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0045"
+    },
+    "CreationDateTime": "2026-01-15"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0045"
+        },
+        "DocumentDateTime": "2026-01-15",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Vertex Construction plc",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "AT665893411",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Alpine Precision Tools AG",
+          "Location": {
+            "Address": {
+              "City": "Vienna",
+              "PostalCode": "1010",
+              "CountryCode": "AT",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 9387.42,
+          "TaxTotalAmount": 1877.48,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 11264.9,
+          "PayableAmount": 11264.9
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 9387.42,
+            "TaxAmount": 1877.48
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH12005452698905835"
+          }
+        },
+        "DueDateTime": "2026-02-14"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-10123",
+                "type": "SKU"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 49.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 191.58
+          },
+          "LineExtensionAmount": 9387.42,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0023"
+    },
+    "CreationDateTime": "2026-05-23"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0023"
+        },
+        "DocumentDateTime": "2026-05-23",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE631603047",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "AT535124448",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Pannonia Chemicals Kft.",
+          "Location": {
+            "Address": {
+              "City": "Vienna",
+              "PostalCode": "1010",
+              "CountryCode": "AT",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 34288.07,
+          "TaxTotalAmount": 6861.84,
+          "AllowanceTotalAmount": 21.14,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 41149.91,
+          "PayableAmount": 41149.91
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 34309.21,
+            "TaxAmount": 6861.84
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 21.14
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH94006427420501698"
+          }
+        },
+        "DueDateTime": "2026-07-07",
+        "ReferenceDocumentID": "PO-825864"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-65303",
+                "type": "SKU"
+              },
+              {
+                "ID": "1041912638775",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 41.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 159.3
+          },
+          "LineExtensionAmount": 6531.3,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-26836",
+                "type": "SKU"
+              },
+              {
+                "ID": "3250423362285",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 20.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 140.48
+          },
+          "LineExtensionAmount": 2809.6,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-93753",
+                "type": "SKU"
+              },
+              {
+                "ID": "4582548659942",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 45.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 167.49
+          },
+          "LineExtensionAmount": 7537.05,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-10873",
+                "type": "SKU"
+              },
+              {
+                "ID": "9400925945044",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 42.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 415.03
+          },
+          "LineExtensionAmount": 17431.26,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0029",
+      "issueDate": "2026-04-02",
+      "dueDate": "2026-04-16"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-653315",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Danube Steelworks d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT778419628"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      },
+      "customer": {
+        "name": "Highland Distribution Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT351747518"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-40041"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2565378702229"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 175.99,
+          "netAmount": 5631.68,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-63967"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 8.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 479.9,
+          "netAmount": 3839.2,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-46951"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4474070813870"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 46.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 27.49,
+          "netAmount": 1174.25,
+          "allowanceTotal": 90.29,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-11789"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8064442591150"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 17.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 146.57,
+          "netAmount": 2491.69,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 13125.19,
+      "taxAmount": 2509.95,
+      "allowanceTotal": 101.92,
+      "chargeTotal": 0.0,
+      "grossAmount": 15635.14,
+      "payableAmount": 15635.14,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 11962.57,
+          "taxAmount": 2392.52
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 1174.25,
+          "taxAmount": 117.43
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH86006422786673776",
+      "reference": null
+    }
+  }
+}

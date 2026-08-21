@@ -1,0 +1,209 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0003"
+    },
+    "CreationDateTime": "2026-07-09"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0003"
+        },
+        "DocumentDateTime": "2026-07-09",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT148025445",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Falcon Aerospace Ltd",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SI728092487",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Adriatic Packaging Ltd",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 34249.41,
+          "TaxTotalAmount": 6096.87,
+          "AllowanceTotalAmount": 18.77,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 40346.28,
+          "PayableAmount": 40346.28
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 26700.51,
+            "TaxAmount": 5340.1
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 7567.67,
+            "TaxAmount": 756.77
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 18.77
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH16003950152047322"
+          }
+        },
+        "DueDateTime": "2026-08-08",
+        "ReferenceDocumentID": "PO-842477"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-85781",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 37.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 326.28
+          },
+          "LineExtensionAmount": 12072.36,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-58446",
+                "type": "SKU"
+              },
+              {
+                "ID": "5317149890579",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 11.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 221.21
+          },
+          "LineExtensionAmount": 2433.31,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-88291",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 45.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 325.07
+          },
+          "LineExtensionAmount": 14628.15,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-96164",
+                "type": "SKU"
+              },
+              {
+                "ID": "8825511495830",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 11.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 466.76
+          },
+          "LineExtensionAmount": 5134.36,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

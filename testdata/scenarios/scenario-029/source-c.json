@@ -1,0 +1,218 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0029"
+    },
+    "CreationDateTime": "2026-04-02"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0029"
+        },
+        "DocumentDateTime": "2026-04-02",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT351747518",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Highland Distribution Ltd",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Mainstrasse 1"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT778419628",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Danube Steelworks d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 13125.19,
+          "TaxTotalAmount": 2509.95,
+          "AllowanceTotalAmount": 101.92,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 15635.14,
+          "PayableAmount": 15635.14
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 11962.57,
+            "TaxAmount": 2392.52
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 1174.25,
+            "TaxAmount": 117.43
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 11.63
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH86006422786673776"
+          }
+        },
+        "DueDateTime": "2026-04-16",
+        "ReferenceDocumentID": "PO-653315"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-40041",
+                "type": "SKU"
+              },
+              {
+                "ID": "2565378702229",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 32.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 175.99
+          },
+          "LineExtensionAmount": 5631.68,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-63967",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 8.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 479.9
+          },
+          "LineExtensionAmount": 3839.2,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-46951",
+                "type": "SKU"
+              },
+              {
+                "ID": "4474070813870",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 46.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 27.49
+          },
+          "LineExtensionAmount": 1174.25,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 90.29
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-11789",
+                "type": "SKU"
+              },
+              {
+                "ID": "8064442591150",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 17.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 146.57
+          },
+          "LineExtensionAmount": 2491.69,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

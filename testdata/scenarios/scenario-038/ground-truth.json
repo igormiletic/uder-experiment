@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0038",
+      "issueDate": "2026-06-10",
+      "dueDate": "2026-07-10"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Danube Steelworks d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SK621846007"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      },
+      "customer": {
+        "name": "Summit Retail Holdings",
+        "identifiers": [],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-36973"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 35.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 125.67,
+          "netAmount": 4398.45,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 4398.45,
+      "taxAmount": 879.69,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 5278.14,
+      "payableAmount": 5278.14,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 4398.45,
+          "taxAmount": 879.69
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH75004834147319206",
+      "reference": null
+    }
+  }
+}

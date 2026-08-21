@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0004"
+    },
+    "CreationDateTime": "2026-05-14"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0004"
+        },
+        "DocumentDateTime": "2026-05-14",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Zurich",
+              "PostalCode": "8000",
+              "CountryCode": "CH",
+              "Street": "Rue de Commerce 45"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "RS309080225",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Helvetia Fine Instruments AG",
+          "Location": {
+            "Address": {
+              "City": "Belgrade",
+              "PostalCode": "11000",
+              "CountryCode": "RS",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 832.26,
+          "TaxTotalAmount": 166.45,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 998.71,
+          "PayableAmount": 998.71
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 832.26,
+            "TaxAmount": 166.45
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH43007995107938259"
+          }
+        },
+        "DueDateTime": "2026-06-13"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-50583",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 6.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 138.71
+          },
+          "LineExtensionAmount": 832.26,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

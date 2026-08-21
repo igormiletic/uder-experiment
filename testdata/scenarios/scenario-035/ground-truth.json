@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0035",
+      "issueDate": "2026-01-12",
+      "dueDate": "2026-02-11"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Balkan Logistics d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI234197150"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-85640"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 45.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 32.59,
+          "netAmount": 1466.55,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 1466.55,
+      "taxAmount": 293.31,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 1759.86,
+      "payableAmount": 1759.86,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 1466.55,
+          "taxAmount": 293.31
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH21008294933049479",
+      "reference": null
+    }
+  }
+}

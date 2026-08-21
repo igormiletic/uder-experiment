@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0031",
+      "issueDate": "2026-06-21",
+      "dueDate": null
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-145933",
+      "contractReference": "CTR-4533"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Iberia Textiles S.A.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU440842833"
+          }
+        ],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      },
+      "customer": {
+        "name": "Northgate Retail Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ125884526"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-76960"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7347794502319"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 40.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 322.84,
+          "netAmount": 11571.13,
+          "allowanceTotal": 1342.47,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-40791"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 50.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 360.16,
+          "netAmount": 18008.0,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-56000"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 27.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 320.4,
+          "netAmount": 8663.54,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 12.74
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 38221.18,
+      "taxAmount": 3211.67,
+      "allowanceTotal": 1373.55,
+      "chargeTotal": 22.33,
+      "grossAmount": 41432.85,
+      "payableAmount": 41432.85,
+      "taxBreakdown": [
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 29579.13,
+          "taxAmount": 1478.96
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 8663.54,
+          "taxAmount": 1732.71
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH35007186921006289",
+      "reference": "RF16368986"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0019",
+      "issueDate": "2026-07-02",
+      "dueDate": "2026-07-16"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-137954",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ935241844"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      },
+      "customer": {
+        "name": "Orion Pharmaceuticals SA",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU113046954"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-24838"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "6451769943162"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 22.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 30.27,
+          "netAmount": 589.96,
+          "allowanceTotal": 75.98,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-58962"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2444752215395"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 7.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 272.42,
+          "netAmount": 1861.3,
+          "allowanceTotal": 45.64,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-53016"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4601147026644"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 16.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 283.59,
+          "netAmount": 4537.44,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 6955.27,
+      "taxAmount": 215.63,
+      "allowanceTotal": 163.55,
+      "chargeTotal": 8.5,
+      "grossAmount": 7170.9,
+      "payableAmount": 7170.9,
+      "taxBreakdown": [
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 589.96,
+          "taxAmount": 29.5
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 1861.3,
+          "taxAmount": 186.13
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 4537.44,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH83004959708562285",
+      "reference": "RF87266557"
+    }
+  }
+}

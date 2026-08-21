@@ -1,0 +1,228 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0047"
+    },
+    "CreationDateTime": "2026-02-27"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0047"
+        },
+        "DocumentDateTime": "2026-02-27",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SK262999850",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Highland Distribution Ltd",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HR776471858",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Pannonia Chemicals Kft.",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 22450.66,
+          "TaxTotalAmount": 3083.7,
+          "AllowanceTotalAmount": 318.79,
+          "ChargeTotalAmount": 8.98,
+          "GrossAmount": 25534.36,
+          "PayableAmount": 25534.36
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 14046.38,
+            "TaxAmount": 1404.64
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 8395.3,
+            "TaxAmount": 1679.06
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Charge",
+            "Amount": 8.98
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH50001825962318602"
+          }
+        },
+        "DueDateTime": "2026-03-13",
+        "ReferenceDocumentID": "PO-282685"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-43190",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 8.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 163.18
+          },
+          "LineExtensionAmount": 1280.57,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 24.87
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-54841",
+                "type": "SKU"
+              },
+              {
+                "ID": "9119317252965",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 27.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 408.48
+          },
+          "LineExtensionAmount": 10755.58,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 273.38
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-43670",
+                "type": "SKU"
+              },
+              {
+                "ID": "2838048893202",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 41.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 49.03
+          },
+          "LineExtensionAmount": 2010.23,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-70368",
+                "type": "SKU"
+              },
+              {
+                "ID": "3465725699021",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 24.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 350.66
+          },
+          "LineExtensionAmount": 8395.3,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 20.54
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

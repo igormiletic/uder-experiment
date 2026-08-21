@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0023",
+      "issueDate": "2026-05-23",
+      "dueDate": "2026-07-07"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-825864",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Pannonia Chemicals Kft.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT535124448"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      },
+      "customer": {
+        "name": "Solaris Energy Group",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE631603047"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-65303"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1041912638775"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 41.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 159.3,
+          "netAmount": 6531.3,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-26836"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3250423362285"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 20.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 140.48,
+          "netAmount": 2809.6,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-93753"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4582548659942"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 45.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 167.49,
+          "netAmount": 7537.05,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-10873"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9400925945044"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 42.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 415.03,
+          "netAmount": 17431.26,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 34288.07,
+      "taxAmount": 6861.84,
+      "allowanceTotal": 21.14,
+      "chargeTotal": 0.0,
+      "grossAmount": 41149.91,
+      "payableAmount": 41149.91,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 34309.21,
+          "taxAmount": 6861.84
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH94006427420501698",
+      "reference": null
+    }
+  }
+}

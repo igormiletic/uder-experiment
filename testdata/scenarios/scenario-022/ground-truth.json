@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0022",
+      "issueDate": "2026-03-10",
+      "dueDate": "2026-04-24"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-658856",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Moravia Plastics a.s.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ913972019"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      },
+      "customer": {
+        "name": "Summit Retail Holdings",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU520829600"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-60117"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 165.64,
+          "netAmount": 2153.32,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-24854"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "4180527974005"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 41.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 235.62,
+          "netAmount": 9020.61,
+          "allowanceTotal": 639.81,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 11170.55,
+      "taxAmount": 2019.45,
+      "allowanceTotal": 643.19,
+      "chargeTotal": 0.0,
+      "grossAmount": 13190.0,
+      "payableAmount": 13190.0,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 2153.32,
+          "taxAmount": 215.33
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9020.61,
+          "taxAmount": 1804.12
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH65001037288875358",
+      "reference": null
+    }
+  }
+}

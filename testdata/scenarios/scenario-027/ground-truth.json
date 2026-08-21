@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0027",
+      "issueDate": "2026-08-25",
+      "dueDate": "2026-10-09"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-956000",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR845410741"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT242884287"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-45723"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "5102703478167"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 1.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 354.98,
+          "netAmount": 354.98,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-10823"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 43.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 15.27,
+          "netAmount": 656.61,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-87681"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9508510235909"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 24.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 81.17,
+          "netAmount": 1948.08,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-66257"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "5024447095362"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 36.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 375.51,
+          "netAmount": 12788.84,
+          "allowanceTotal": 729.52,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 15748.51,
+      "taxAmount": 1610.35,
+      "allowanceTotal": 729.52,
+      "chargeTotal": 0.0,
+      "grossAmount": 17358.86,
+      "payableAmount": 17358.86,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 354.98,
+          "taxAmount": 71.0
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 15393.53,
+          "taxAmount": 1539.35
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH70007979094041069",
+      "reference": null
+    }
+  }
+}

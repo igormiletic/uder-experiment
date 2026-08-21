@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0022</cbc:ID>
+    <cbc:IssueDate>2026-03-10</cbc:IssueDate>
+    <cbc:DueDate>2026-04-24</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-658856</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Moravia Plastics a.s.</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Fabricka 8</cbc:StreetName><cbc:CityName>Prague</cbc:CityName><cbc:PostalZone>11000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>CZ</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>CZ913972019</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Summit Retail Holdings</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Mainstrasse 1</cbc:StreetName><cbc:CityName>Budapest</cbc:CityName><cbc:PostalZone>1051</cbc:PostalZone><cac:Country><cbc:IdentificationCode>HU</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>HU520829600</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>CARD</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH65001037288875358</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    <cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">3.38</cbc:Amount></cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">2019.45</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">2153.32</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">215.33</cbc:TaxAmount><cac:TaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal><cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">9020.61</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">1804.12</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">11170.55</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">11170.55</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">13190.00</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">643.19</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">13190.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="LTR">13</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">2153.32</cbc:LineExtensionAmount><cac:Item><cbc:Name>Circuit Protection Module</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-60117</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>AA</cbc:ID><cbc:Percent>10.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">165.64</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="MTR">41</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">9020.61</cbc:LineExtensionAmount><cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">639.81</cbc:Amount></cac:AllowanceCharge><cac:Item><cbc:Name>Pallet Wrap Film Roll</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-24854</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">4180527974005</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">235.62</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

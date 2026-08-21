@@ -1,0 +1,308 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0006"
+    },
+    "CreationDateTime": "2026-04-21"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0006"
+        },
+        "DocumentDateTime": "2026-04-21",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PL107697312",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT226459306",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Helvetia Fine Instruments AG",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 30475.44,
+          "TaxTotalAmount": 2490.49,
+          "AllowanceTotalAmount": 798.99,
+          "ChargeTotalAmount": 43.86,
+          "GrossAmount": 32965.93,
+          "PayableAmount": 32965.93
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "TaxableAmount": 16584.23,
+            "TaxAmount": 829.21
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 2665.56,
+            "TaxAmount": 533.12
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 11281.55,
+            "TaxAmount": 1128.16
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 55.9
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH36007911164738830"
+          },
+          "PaymentReference": "RF61015588"
+        },
+        "DueDateTime": "2026-06-20",
+        "ReferenceDocumentID": "PO-950234",
+        "ContractReferenceDocumentID": "CTR-1354"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-73777",
+                "type": "SKU"
+              },
+              {
+                "ID": "9435081071377",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 46.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 33.13
+          },
+          "LineExtensionAmount": 1472.21,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 51.77
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-31610",
+                "type": "SKU"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 31.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 57.37
+          },
+          "LineExtensionAmount": 1792.38,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Charge",
+              "Amount": 13.91
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-67448",
+                "type": "SKU"
+              },
+              {
+                "ID": "6846931071850",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Steel Fastener Kit"
+          },
+          "Quantity": {
+            "value": 6.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 145.53
+          },
+          "LineExtensionAmount": 873.18,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-97370",
+                "type": "SKU"
+              },
+              {
+                "ID": "3008970966358",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 27.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 411.77
+          },
+          "LineExtensionAmount": 11134.38,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Charge",
+              "Amount": 16.59
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "5",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-64446",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 31.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 5.03
+          },
+          "LineExtensionAmount": 147.17,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 8.76
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "6",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-71590",
+                "type": "SKU"
+              },
+              {
+                "ID": "3044888458237",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 46.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 343.07
+          },
+          "LineExtensionAmount": 15112.02,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 682.56
+            },
+            {
+              "Indicator": "Charge",
+              "Amount": 13.36
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Super-Reduced",
+            "Percent": 5.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0002"
+    },
+    "CreationDateTime": "2026-06-17"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0002"
+        },
+        "DocumentDateTime": "2026-06-17",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT313437262",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Vertex Construction plc",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HU167271069",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Moravia Plastics a.s.",
+          "Location": {
+            "Address": {
+              "City": "Budapest",
+              "PostalCode": "1051",
+              "CountryCode": "HU",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 52880.99,
+          "TaxTotalAmount": 6470.31,
+          "AllowanceTotalAmount": 13.86,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 59351.3,
+          "PayableAmount": 59351.3
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 41086.57,
+            "TaxAmount": 4108.65
+          },
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 11808.28,
+            "TaxAmount": 2361.66
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 13.86
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "SEPA_CREDIT_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH25005144162240334"
+          }
+        },
+        "DueDateTime": "2026-07-17",
+        "ReferenceDocumentID": "PO-314464"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-81101",
+                "type": "SKU"
+              },
+              {
+                "ID": "9473154283151",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Circuit Protection Module"
+          },
+          "Quantity": {
+            "value": 39.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 446.87
+          },
+          "LineExtensionAmount": 17427.93,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-34735",
+                "type": "SKU"
+              },
+              {
+                "ID": "9045470181612",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 35.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 418.36
+          },
+          "LineExtensionAmount": 14642.6,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-63666",
+                "type": "SKU"
+              },
+              {
+                "ID": "2817820991787",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 44.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 268.37
+          },
+          "LineExtensionAmount": 11808.28,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "4",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-11833",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Aluminium Extrusion Profile"
+          },
+          "Quantity": {
+            "value": 44.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 204.91
+          },
+          "LineExtensionAmount": 9016.04,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

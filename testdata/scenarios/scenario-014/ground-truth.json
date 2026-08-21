@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0014",
+      "issueDate": "2026-08-12",
+      "dueDate": "2026-09-11"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Pannonia Chemicals Kft.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE627586978"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      },
+      "customer": {
+        "name": "Summit Retail Holdings",
+        "identifiers": [],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-76394"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 3.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 8.96,
+          "netAmount": 26.88,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 26.88,
+      "taxAmount": 5.38,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 32.26,
+      "payableAmount": 32.26,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 26.88,
+          "taxAmount": 5.38
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH53007724642428770",
+      "reference": null
+    }
+  }
+}

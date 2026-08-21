@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0018",
+      "issueDate": "2026-05-25",
+      "dueDate": "2026-06-24"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-508976",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "RS590177675"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      },
+      "customer": {
+        "name": "Orion Pharmaceuticals SA",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "RS782285475"
+          }
+        ],
+        "address": {
+          "street": "Fabricka 8",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-20837"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 38.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 455.63,
+          "netAmount": 17313.94,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-18722"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8429452578969"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 20.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 127.43,
+          "netAmount": 2548.6,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 19838.55,
+      "taxAmount": 3972.51,
+      "allowanceTotal": 23.99,
+      "chargeTotal": 0.0,
+      "grossAmount": 23811.06,
+      "payableAmount": 23811.06,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 19862.54,
+          "taxAmount": 3972.51
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH68002371191486767",
+      "reference": null
+    }
+  }
+}

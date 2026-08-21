@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0045",
+      "issueDate": "2026-01-15",
+      "dueDate": "2026-02-14"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT665893411"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-10123"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 49.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 191.58,
+          "netAmount": 9387.42,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 9387.42,
+      "taxAmount": 1877.48,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 11264.9,
+      "payableAmount": 11264.9,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9387.42,
+          "taxAmount": 1877.48
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH12005452698905835",
+      "reference": null
+    }
+  }
+}

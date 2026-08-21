@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0010"
+    },
+    "CreationDateTime": "2026-06-11"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0010"
+        },
+        "DocumentDateTime": "2026-06-11",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Falcon Aerospace Ltd",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE944549415",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Baltic Components UAB",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 7276.29,
+          "TaxTotalAmount": 1455.26,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 8731.55,
+          "PayableAmount": 8731.55
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 7276.29,
+            "TaxAmount": 1455.26
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH12007247097235023"
+          }
+        },
+        "DueDateTime": "2026-07-11"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-21205",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 21.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 346.49
+          },
+          "LineExtensionAmount": 7276.29,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

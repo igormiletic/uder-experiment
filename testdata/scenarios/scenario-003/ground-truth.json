@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0003",
+      "issueDate": "2026-07-09",
+      "dueDate": "2026-08-08"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-842477",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Adriatic Packaging Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI728092487"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      },
+      "customer": {
+        "name": "Falcon Aerospace Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PT148025445"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Lisbon",
+          "postalCode": "1100",
+          "country": "PT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-85781"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 37.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 326.28,
+          "netAmount": 12072.36,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-58446"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "5317149890579"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 11.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 221.21,
+          "netAmount": 2433.31,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-88291"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 45.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 325.07,
+          "netAmount": 14628.15,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-96164"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8825511495830"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 11.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 466.76,
+          "netAmount": 5134.36,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 34249.41,
+      "taxAmount": 6096.87,
+      "allowanceTotal": 18.77,
+      "chargeTotal": 0.0,
+      "grossAmount": 40346.28,
+      "payableAmount": 40346.28,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 26700.51,
+          "taxAmount": 5340.1
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 7567.67,
+          "taxAmount": 756.77
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH16003950152047322",
+      "reference": null
+    }
+  }
+}

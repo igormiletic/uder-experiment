@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0016",
+      "issueDate": "2026-05-11",
+      "dueDate": null
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-419198",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Moravia Plastics a.s.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT938267165"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      },
+      "customer": {
+        "name": "Falcon Aerospace Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ618472805"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-76057"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9566709529855"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 24.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 27.21,
+          "netAmount": 653.04,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-50710"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8150778097639"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 7.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 229.61,
+          "netAmount": 1607.27,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-26353"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3609199934492"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 48.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 419.57,
+          "netAmount": 19798.39,
+          "allowanceTotal": 340.97,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Standard",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-77379"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 38.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 267.55,
+          "netAmount": 9929.19,
+          "allowanceTotal": 237.71,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-35968"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "6721619600768"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 12.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 234.8,
+          "netAmount": 2427.11,
+          "allowanceTotal": 408.19,
+          "chargeTotal": 17.7
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "6",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-44277"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3455655942445"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 45.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 35.7,
+          "netAmount": 1606.55,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.05
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 35971.14,
+      "taxAmount": 1186.3,
+      "allowanceTotal": 1037.28,
+      "chargeTotal": 17.75,
+      "grossAmount": 37157.44,
+      "payableAmount": 37157.44,
+      "taxBreakdown": [
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 653.04,
+          "taxAmount": 32.65
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 11536.46,
+          "taxAmount": 1153.65
+        },
+        {
+          "category": "Standard",
+          "rate": 0.0,
+          "taxableAmount": 19798.39,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 4033.66,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH14002791570853870",
+      "reference": "RF22282604"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0001",
+      "issueDate": "2026-04-17",
+      "dueDate": "2026-05-01"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-649031",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Moravia Plastics a.s.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CH860511160"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Zurich",
+          "postalCode": "8000",
+          "country": "CH"
+        }
+      },
+      "customer": {
+        "name": "Solaris Energy Group",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ817872674"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-61489"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 49.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 406.64,
+          "netAmount": 19925.36,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-81828"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 25.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 195.25,
+          "netAmount": 4789.92,
+          "allowanceTotal": 91.33,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-59413"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 40.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 196.1,
+          "netAmount": 7616.48,
+          "allowanceTotal": 227.52,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 32339.7,
+      "taxAmount": 5225.71,
+      "allowanceTotal": 318.85,
+      "chargeTotal": 7.94,
+      "grossAmount": 37565.41,
+      "payableAmount": 37565.41,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 19925.36,
+          "taxAmount": 3985.07
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 12406.4,
+          "taxAmount": 1240.64
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH77006813413178604",
+      "reference": null
+    }
+  }
+}

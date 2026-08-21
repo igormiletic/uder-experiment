@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0010",
+      "issueDate": "2026-06-11",
+      "dueDate": "2026-07-11"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Baltic Components UAB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE944549415"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      },
+      "customer": {
+        "name": "Falcon Aerospace Ltd",
+        "identifiers": [],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-21205"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 21.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 346.49,
+          "netAmount": 7276.29,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 7276.29,
+      "taxAmount": 1455.26,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 8731.55,
+      "payableAmount": 8731.55,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 7276.29,
+          "taxAmount": 1455.26
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH12007247097235023",
+      "reference": null
+    }
+  }
+}

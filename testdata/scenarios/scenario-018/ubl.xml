@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0018</cbc:ID>
+    <cbc:IssueDate>2026-05-25</cbc:IssueDate>
+    <cbc:DueDate>2026-06-24</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference><cbc:ID>PO-508976</cbc:ID></cac:OrderReference>
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Alpine Precision Tools AG</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Ulica Kralja Petra 5</cbc:StreetName><cbc:CityName>Belgrade</cbc:CityName><cbc:PostalZone>11000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>RS</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>RS590177675</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Orion Pharmaceuticals SA</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Fabricka 8</cbc:StreetName><cbc:CityName>Belgrade</cbc:CityName><cbc:PostalZone>11000</cbc:PostalZone><cac:Country><cbc:IdentificationCode>RS</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>RS782285475</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>CARD</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH68002371191486767</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    <cac:AllowanceCharge><cbc:ChargeIndicator>false</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">23.99</cbc:Amount></cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">3972.51</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">19862.54</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">3972.51</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">19838.55</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">19838.55</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">23811.06</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">23.99</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">23811.06</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="EA">38</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">17313.94</cbc:LineExtensionAmount><cac:Item><cbc:Name>Precision Bearing Set</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-20837</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">455.63</cbc:PriceAmount></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="BOX">20</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">2548.60</cbc:LineExtensionAmount><cac:Item><cbc:Name>Hydraulic Hose Assembly</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-18722</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="GTIN">8429452578969</cbc:ID></cac:StandardItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">127.43</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

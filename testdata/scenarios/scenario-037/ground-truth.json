@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0037",
+      "issueDate": "2026-07-25",
+      "dueDate": "2026-08-08"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-989528",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SK761226720"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      },
+      "customer": {
+        "name": "Solaris Energy Group",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "DE716965176"
+          }
+        ],
+        "address": {
+          "street": null,
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-99970"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 171.1,
+          "netAmount": 5313.58,
+          "allowanceTotal": 167.84,
+          "chargeTotal": 6.22
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-83130"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2892203620327"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 5.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 234.34,
+          "netAmount": 1171.7,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Industrial Gear Reducer",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-77470"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1793935483603"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 17.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 34.12,
+          "netAmount": 593.68,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 13.64
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-63075"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1416336353160"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 30.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 120.14,
+          "netAmount": 3152.05,
+          "allowanceTotal": 452.15,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Hydraulic Hose Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-53316"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7696028647971"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 38.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 156.77,
+          "netAmount": 5351.93,
+          "allowanceTotal": 605.33,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 15568.29,
+      "taxAmount": 344.89,
+      "allowanceTotal": 1239.97,
+      "chargeTotal": 19.86,
+      "grossAmount": 15913.18,
+      "payableAmount": 15913.18,
+      "taxBreakdown": [
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 11837.21,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 593.68,
+          "taxAmount": 29.68
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 3152.05,
+          "taxAmount": 315.21
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH61006809427356582",
+      "reference": "RF72207174"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0043",
+      "issueDate": "2026-09-07",
+      "dueDate": "2026-10-07"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Rheinland Elektronik GmbH",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HU310574359"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Budapest",
+          "postalCode": "1051",
+          "country": "HU"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-87953"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 7.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 109.37,
+          "netAmount": 765.59,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 765.59,
+      "taxAmount": 153.12,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 918.71,
+      "payableAmount": 918.71,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 765.59,
+          "taxAmount": 153.12
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": null,
+      "reference": null
+    }
+  }
+}

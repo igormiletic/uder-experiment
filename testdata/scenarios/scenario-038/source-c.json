@@ -1,0 +1,103 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0038"
+    },
+    "CreationDateTime": "2026-06-10"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0038"
+        },
+        "DocumentDateTime": "2026-06-10",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [],
+          "Name": "Summit Retail Holdings",
+          "Location": {
+            "Address": {
+              "City": "Warsaw",
+              "PostalCode": "00-001",
+              "CountryCode": "PL",
+              "Street": "Rue de Commerce 45"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SK621846007",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Danube Steelworks d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Bratislava",
+              "PostalCode": "81101",
+              "CountryCode": "SK",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 4398.45,
+          "TaxTotalAmount": 879.69,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 5278.14,
+          "PayableAmount": 5278.14
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 4398.45,
+            "TaxAmount": 879.69
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH75004834147319206"
+          }
+        },
+        "DueDateTime": "2026-07-10"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-36973",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 35.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 125.67
+          },
+          "LineExtensionAmount": 4398.45,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

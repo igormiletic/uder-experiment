@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0044",
+      "issueDate": "2026-08-11",
+      "dueDate": "2026-09-10"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Nordic Timber Supply AB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT533165253"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      },
+      "customer": {
+        "name": "Riverside Motors GmbH",
+        "identifiers": [],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-13759"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 306.79,
+          "netAmount": 9817.28,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 9817.28,
+      "taxAmount": 1963.46,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 11780.74,
+      "payableAmount": 11780.74,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9817.28,
+          "taxAmount": 1963.46
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": null,
+      "reference": null
+    }
+  }
+}

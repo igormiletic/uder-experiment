@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>INV-2026-0045</cbc:ID>
+    <cbc:IssueDate>2026-01-15</cbc:IssueDate>
+    <cbc:DueDate>2026-02-14</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    
+    
+    <cac:AccountingSupplierParty><cac:Party><cac:PartyName><cbc:Name>Alpine Precision Tools AG</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Bulevar Oslobodjenja 98</cbc:StreetName><cbc:CityName>Vienna</cbc:CityName><cbc:PostalZone>1010</cbc:PostalZone><cac:Country><cbc:IdentificationCode>AT</cbc:IdentificationCode></cac:Country></cac:PostalAddress><cac:PartyTaxScheme><cbc:CompanyID>AT665893411</cbc:CompanyID><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Vertex Construction plc</cbc:Name></cac:PartyName><cac:PostalAddress><cbc:StreetName>Via Roma 22</cbc:StreetName><cbc:CityName>Berlin</cbc:CityName><cbc:PostalZone>10115</cbc:PostalZone><cac:Country><cbc:IdentificationCode>DE</cbc:IdentificationCode></cac:Country></cac:PostalAddress></cac:Party></cac:AccountingCustomerParty>
+    <cac:PaymentMeans><cbc:PaymentMeansCode>BANK_TRANSFER</cbc:PaymentMeansCode><cac:PayeeFinancialAccount><cbc:ID>CH12005452698905835</cbc:ID></cac:PayeeFinancialAccount></cac:PaymentMeans>
+    
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">1877.48</cbc:TaxAmount>
+        <cac:TaxSubtotal><cbc:TaxableAmount currencyID="EUR">9387.42</cbc:TaxableAmount><cbc:TaxAmount currencyID="EUR">1877.48</cbc:TaxAmount><cac:TaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">9387.42</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">9387.42</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">11264.90</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">0.00</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">11264.90</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="KGM">49</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="EUR">9387.42</cbc:LineExtensionAmount><cac:Item><cbc:Name>PVC Conduit Pipe</cbc:Name><cac:SellersItemIdentification><cbc:ID>SKU-10123</cbc:ID></cac:SellersItemIdentification><cac:ClassifiedTaxCategory><cbc:ID>S</cbc:ID><cbc:Percent>20.0</cbc:Percent><cac:TaxScheme><cbc:ID>VAT</cbc:ID></cac:TaxScheme></cac:ClassifiedTaxCategory></cac:Item><cac:Price><cbc:PriceAmount currencyID="EUR">191.58</cbc:PriceAmount></cac:Price></cac:InvoiceLine>
+</Invoice>

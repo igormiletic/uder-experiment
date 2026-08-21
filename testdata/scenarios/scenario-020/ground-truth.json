@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0020",
+      "issueDate": "2026-08-16",
+      "dueDate": "2026-09-15"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Nordic Timber Supply AB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "RS843675336"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      },
+      "customer": {
+        "name": "Continental Foods AG",
+        "identifiers": [],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-79562"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 42.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 473.69,
+          "netAmount": 19894.98,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 19894.98,
+      "taxAmount": 3979.0,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 23873.98,
+      "payableAmount": 23873.98,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 19894.98,
+          "taxAmount": 3979.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH91006945120828945",
+      "reference": null
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0040",
+      "issueDate": "2026-08-07",
+      "dueDate": null
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-894011",
+      "contractReference": "CTR-1163"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Danube Steelworks d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT195626499"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Riverside Motors GmbH",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ864356388"
+          }
+        ],
+        "address": {
+          "street": "Industriestrasse 12",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-41108"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2638157752112"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 44.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 117.58,
+          "netAmount": 5173.52,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Reduced",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Precision Bearing Set",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-19847"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1072129032956"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 23.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 449.38,
+          "netAmount": 9988.58,
+          "allowanceTotal": 366.09,
+          "chargeTotal": 18.93
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Super-Reduced",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-14489"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 72.45,
+          "netAmount": 2086.42,
+          "allowanceTotal": 231.98,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "Standard",
+          "exempt": true,
+          "exemptionReason": "Intra-community supply, Art. 138 VAT Directive"
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-10849"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7614387016740"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 43.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 446.58,
+          "netAmount": 16655.6,
+          "allowanceTotal": 2550.67,
+          "chargeTotal": 3.33
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-44279"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 324.12,
+          "netAmount": 4213.56,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "6",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-33777"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "7418215306277"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 13.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 338.51,
+          "netAmount": 4148.72,
+          "allowanceTotal": 256.49,
+          "chargeTotal": 4.58
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 42281.41,
+      "taxAmount": 3541.8,
+      "allowanceTotal": 3412.27,
+      "chargeTotal": 48.89,
+      "grossAmount": 45823.21,
+      "payableAmount": 45823.21,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 0.0,
+          "taxableAmount": 5173.52,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 0.0,
+          "taxableAmount": 9988.58,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Standard",
+          "rate": 0.0,
+          "taxableAmount": 2086.42,
+          "taxAmount": 0.0
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 16655.6,
+          "taxAmount": 3331.12
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 4213.56,
+          "taxAmount": 210.68
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 4148.72,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH52007372436842507",
+      "reference": "RF55313344"
+    }
+  }
+}

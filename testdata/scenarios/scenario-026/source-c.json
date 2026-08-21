@@ -1,0 +1,176 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0026"
+    },
+    "CreationDateTime": "2026-08-14"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0026"
+        },
+        "DocumentDateTime": "2026-08-14",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT154321050",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "PT884731392",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Danube Steelworks d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Lisbon",
+              "PostalCode": "1100",
+              "CountryCode": "PT",
+              "Street": "Industriestrasse 12"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 15508.99,
+          "TaxTotalAmount": 3104.27,
+          "AllowanceTotalAmount": 12.38,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 18613.26,
+          "PayableAmount": 18613.26
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 15521.37,
+            "TaxAmount": 3104.27
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 12.38
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH76003200716820491"
+          }
+        },
+        "DueDateTime": "2026-09-13",
+        "ReferenceDocumentID": "PO-483560"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-93922",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 22.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 275.47
+          },
+          "LineExtensionAmount": 6060.34,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-23853",
+                "type": "SKU"
+              },
+              {
+                "ID": "1463574011613",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 32.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 152.71
+          },
+          "LineExtensionAmount": 4886.72,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-12970",
+                "type": "SKU"
+              },
+              {
+                "ID": "4480210728548",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 13.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 351.87
+          },
+          "LineExtensionAmount": 4574.31,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0036",
+      "issueDate": "2026-04-22",
+      "dueDate": "2026-06-06"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-480570",
+      "contractReference": "CTR-6752"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Alpine Precision Tools AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT416582617"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Summit Retail Holdings",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ529130234"
+          }
+        ],
+        "address": {
+          "street": "Mainstrasse 1",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-74774"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "8293585945541"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 1.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 289.74,
+          "netAmount": 248.94,
+          "allowanceTotal": 40.8,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-85269"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 6.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 373.1,
+          "netAmount": 2111.46,
+          "allowanceTotal": 127.14,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 5.0,
+          "category": "Super-Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-96871"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 9.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 234.78,
+          "netAmount": 1810.26,
+          "allowanceTotal": 302.76,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Circuit Protection Module",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-93050"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1671295707419"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 3.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 480.26,
+          "netAmount": 1244.0,
+          "allowanceTotal": 196.78,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "5",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-75324"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9182127942105"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 50.0,
+          "unit": "KGM"
+        },
+        "pricing": {
+          "unitPrice": 377.89,
+          "netAmount": 18894.5,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 24285.39,
+      "taxAmount": 2019.91,
+      "allowanceTotal": 712.07,
+      "chargeTotal": 20.82,
+      "grossAmount": 26305.3,
+      "payableAmount": 26305.3,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 19143.44,
+          "taxAmount": 1914.34
+        },
+        {
+          "category": "Super-Reduced",
+          "rate": 5.0,
+          "taxableAmount": 2111.46,
+          "taxAmount": 105.57
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 3054.26,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH84003124148340368",
+      "reference": "RF22311320"
+    }
+  }
+}

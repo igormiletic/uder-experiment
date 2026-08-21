@@ -1,0 +1,174 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0042"
+    },
+    "CreationDateTime": "2026-09-07"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0042"
+        },
+        "DocumentDateTime": "2026-09-07",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT822428794",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Cedar Point Logistics",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Rue de Commerce 45"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "HR676047335",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Iberia Textiles S.A.",
+          "Location": {
+            "Address": {
+              "City": "Zagreb",
+              "PostalCode": "10000",
+              "CountryCode": "HR",
+              "Street": "Via Roma 22"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 23270.75,
+          "TaxTotalAmount": 2854.4,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.75,
+          "GrossAmount": 26125.15,
+          "PayableAmount": 26125.15
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 5274.0,
+            "TaxAmount": 1054.8
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 17996.0,
+            "TaxAmount": 1799.6
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Charge",
+            "Amount": 0.75
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH52002449791321154"
+          }
+        },
+        "DueDateTime": "2026-09-21",
+        "ReferenceDocumentID": "PO-323726"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-14420",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Filter Cartridge"
+          },
+          "Quantity": {
+            "value": 25.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 210.96
+          },
+          "LineExtensionAmount": 5274.0,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-95896",
+                "type": "SKU"
+              }
+            ],
+            "Description": "LED Panel Light"
+          },
+          "Quantity": {
+            "value": 33.0,
+            "uom": "BOX"
+          },
+          "UnitPrice": {
+            "Amount": 342.24
+          },
+          "LineExtensionAmount": 11293.92,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-11318",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Safety Valve Assembly"
+          },
+          "Quantity": {
+            "value": 34.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 197.12
+          },
+          "LineExtensionAmount": 6702.08,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

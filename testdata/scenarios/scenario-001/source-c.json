@@ -1,0 +1,184 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0001"
+    },
+    "CreationDateTime": "2026-04-17"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0001"
+        },
+        "DocumentDateTime": "2026-04-17",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ817872674",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Solaris Energy Group",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CH860511160",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Moravia Plastics a.s.",
+          "Location": {
+            "Address": {
+              "City": "Zurich",
+              "PostalCode": "8000",
+              "CountryCode": "CH",
+              "Street": "Ulica Kralja Petra 5"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 32339.7,
+          "TaxTotalAmount": 5225.71,
+          "AllowanceTotalAmount": 318.85,
+          "ChargeTotalAmount": 7.94,
+          "GrossAmount": 37565.41,
+          "PayableAmount": 37565.41
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 19925.36,
+            "TaxAmount": 3985.07
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 12406.4,
+            "TaxAmount": 1240.64
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Charge",
+            "Amount": 7.94
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH77006813413178604"
+          }
+        },
+        "DueDateTime": "2026-05-01",
+        "ReferenceDocumentID": "PO-649031"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-61489",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Industrial Gear Reducer"
+          },
+          "Quantity": {
+            "value": 49.0,
+            "uom": "MTR"
+          },
+          "UnitPrice": {
+            "Amount": 406.64
+          },
+          "LineExtensionAmount": 19925.36,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-81828",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 25.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 195.25
+          },
+          "LineExtensionAmount": 4789.92,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 91.33
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "3",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-59413",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Insulated Copper Cable (100m)"
+          },
+          "Quantity": {
+            "value": 40.0,
+            "uom": "LTR"
+          },
+          "UnitPrice": {
+            "Amount": 196.1
+          },
+          "LineExtensionAmount": 7616.48,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 227.52
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

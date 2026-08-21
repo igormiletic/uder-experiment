@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0008",
+      "issueDate": "2026-06-04",
+      "dueDate": "2026-07-04"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Helvetia Fine Instruments AG",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT588201456"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      },
+      "customer": {
+        "name": "Continental Foods AG",
+        "identifiers": [],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-56595"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 14.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 475.42,
+          "netAmount": 6655.88,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 6655.88,
+      "taxAmount": 1331.18,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 7987.06,
+      "payableAmount": 7987.06,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 6655.88,
+          "taxAmount": 1331.18
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH85004424646469141",
+      "reference": null
+    }
+  }
+}

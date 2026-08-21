@@ -1,0 +1,158 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0007"
+    },
+    "CreationDateTime": "2026-07-11"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0007"
+        },
+        "DocumentDateTime": "2026-07-11",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "SI471654760",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Blue Harbor Trading Co",
+          "Location": {
+            "Address": {
+              "City": "Ljubljana",
+              "PostalCode": "1000",
+              "CountryCode": "SI",
+              "Street": "Hafenstrasse 3"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "DE720338945",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Balkan Logistics d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Berlin",
+              "PostalCode": "10115",
+              "CountryCode": "DE",
+              "Street": "Bulevar Oslobodjenja 98"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 15790.48,
+          "TaxTotalAmount": 3160.16,
+          "AllowanceTotalAmount": 114.54,
+          "ChargeTotalAmount": 4.52,
+          "GrossAmount": 18950.64,
+          "PayableAmount": 18950.64
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 15800.79,
+            "TaxAmount": 3160.16
+          }
+        ],
+        "AllowanceCharge": [
+          {
+            "Indicator": "Allowance",
+            "Amount": 14.83
+          },
+          {
+            "Indicator": "Charge",
+            "Amount": 4.52
+          }
+        ],
+        "PaymentTerm": {
+          "PaymentMeansCode": "BANK_TRANSFER",
+          "PayerFinancialAccount": {
+            "ID": "CH42004096653981634"
+          }
+        },
+        "DueDateTime": "2026-07-25",
+        "ReferenceDocumentID": "PO-620404"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-14368",
+                "type": "SKU"
+              },
+              {
+                "ID": "1204617215174",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "Hydraulic Hose Assembly"
+          },
+          "Quantity": {
+            "value": 16.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 126.42
+          },
+          "LineExtensionAmount": 1923.01,
+          "AllowanceCharge": [
+            {
+              "Indicator": "Allowance",
+              "Amount": 99.71
+            }
+          ],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-13950",
+                "type": "SKU"
+              },
+              {
+                "ID": "7422393639802",
+                "type": "GTIN"
+              }
+            ],
+            "Description": "PVC Conduit Pipe"
+          },
+          "Quantity": {
+            "value": 49.0,
+            "uom": "KGM"
+          },
+          "UnitPrice": {
+            "Amount": 283.22
+          },
+          "LineExtensionAmount": 13877.78,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

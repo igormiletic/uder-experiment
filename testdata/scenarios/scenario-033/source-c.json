@@ -1,0 +1,142 @@
+{
+  "ApplicationArea": {
+    "Sender": {
+      "LogicalID": "ExampleSupplierSystem",
+      "ComponentID": "InvoicingService",
+      "TaskID": "INV-2026-0033"
+    },
+    "CreationDateTime": "2026-01-16"
+  },
+  "DataArea": {
+    "Invoice": {
+      "InvoiceHeader": {
+        "DocumentID": {
+          "ID": "INV-2026-0033"
+        },
+        "DocumentDateTime": "2026-01-16",
+        "CurrencyCode": "EUR",
+        "BuyerParty": {
+          "PartyIDs": [
+            {
+              "ID": "CZ331404761",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Summit Retail Holdings",
+          "Location": {
+            "Address": {
+              "City": "Prague",
+              "PostalCode": "11000",
+              "CountryCode": "CZ",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "SellerParty": {
+          "PartyIDs": [
+            {
+              "ID": "LT495038929",
+              "type": "VAT"
+            }
+          ],
+          "Name": "Danube Steelworks d.o.o.",
+          "Location": {
+            "Address": {
+              "City": "Vilnius",
+              "PostalCode": "01103",
+              "CountryCode": "LT",
+              "Street": "Fabricka 8"
+            }
+          }
+        },
+        "TotalAmount": {
+          "LineTotalAmount": 13108.0,
+          "TaxTotalAmount": 1758.37,
+          "AllowanceTotalAmount": 0.0,
+          "ChargeTotalAmount": 0.0,
+          "GrossAmount": 14866.37,
+          "PayableAmount": 14866.37
+        },
+        "TaxSummary": [
+          {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "TaxableAmount": 4475.64,
+            "TaxAmount": 895.13
+          },
+          {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "TaxableAmount": 8632.36,
+            "TaxAmount": 863.24
+          }
+        ],
+        "AllowanceCharge": [],
+        "PaymentTerm": {
+          "PaymentMeansCode": "CARD",
+          "PayerFinancialAccount": {
+            "ID": "CH74007337795080163"
+          }
+        },
+        "DueDateTime": "2026-01-30",
+        "ReferenceDocumentID": "PO-819052"
+      },
+      "InvoiceLine": [
+        {
+          "LineNumber": "1",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-14571",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Precision Bearing Set"
+          },
+          "Quantity": {
+            "value": 39.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 114.76
+          },
+          "LineExtensionAmount": 4475.64,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Standard",
+            "Percent": 20.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        },
+        {
+          "LineNumber": "2",
+          "Item": {
+            "ItemID": [
+              {
+                "ID": "SKU-65607",
+                "type": "SKU"
+              }
+            ],
+            "Description": "Pallet Wrap Film Roll"
+          },
+          "Quantity": {
+            "value": 44.0,
+            "uom": "EA"
+          },
+          "UnitPrice": {
+            "Amount": 196.19
+          },
+          "LineExtensionAmount": 8632.36,
+          "AllowanceCharge": [],
+          "TaxCategory": {
+            "CategoryCode": "Reduced",
+            "Percent": 10.0,
+            "Exempt": false,
+            "ExemptionReason": null
+          }
+        }
+      ]
+    }
+  }
+}

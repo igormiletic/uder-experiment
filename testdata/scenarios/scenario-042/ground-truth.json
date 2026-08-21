@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0042",
+      "issueDate": "2026-09-07",
+      "dueDate": "2026-09-21"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-323726",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Iberia Textiles S.A.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR676047335"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Cedar Point Logistics",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "LT822428794"
+          }
+        ],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Vilnius",
+          "postalCode": "01103",
+          "country": "LT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-14420"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 25.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 210.96,
+          "netAmount": 5274.0,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-95896"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 33.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 342.24,
+          "netAmount": 11293.92,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-11318"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 34.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 197.12,
+          "netAmount": 6702.08,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 23270.75,
+      "taxAmount": 2854.4,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.75,
+      "grossAmount": 26125.15,
+      "payableAmount": 26125.15,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 5274.0,
+          "taxAmount": 1054.8
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 17996.0,
+          "taxAmount": 1799.6
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH52002449791321154",
+      "reference": null
+    }
+  }
+}

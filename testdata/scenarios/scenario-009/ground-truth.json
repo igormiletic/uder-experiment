@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0009",
+      "issueDate": "2026-02-21",
+      "dueDate": "2026-04-07"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-897097",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Pannonia Chemicals Kft.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PL273582282"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      },
+      "customer": {
+        "name": "Blue Harbor Trading Co",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "PL915490311"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Warsaw",
+          "postalCode": "00-001",
+          "country": "PL"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-15773"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9327213142014"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 9.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 132.45,
+          "netAmount": 1192.05,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-40149"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "6133224915699"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 2.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 423.7,
+          "netAmount": 823.79,
+          "allowanceTotal": 23.61,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 2010.83,
+      "taxAmount": 283.97,
+      "allowanceTotal": 28.62,
+      "chargeTotal": 0.0,
+      "grossAmount": 2294.8,
+      "payableAmount": 2294.8,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 1192.05,
+          "taxAmount": 119.21
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 823.79,
+          "taxAmount": 164.76
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH52006117799522186",
+      "reference": null
+    }
+  }
+}

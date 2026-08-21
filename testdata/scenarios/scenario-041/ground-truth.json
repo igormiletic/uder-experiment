@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0041",
+      "issueDate": "2026-05-12",
+      "dueDate": "2026-06-11"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": null,
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Nordic Timber Supply AB",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SI709942639"
+          }
+        ],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Ljubljana",
+          "postalCode": "1000",
+          "country": "SI"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [],
+        "address": {
+          "street": "Hafenstrasse 3",
+          "city": "Belgrade",
+          "postalCode": "11000",
+          "country": "RS"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-30388"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 28.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 321.84,
+          "netAmount": 9011.52,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 9011.52,
+      "taxAmount": 1802.3,
+      "allowanceTotal": 0.0,
+      "chargeTotal": 0.0,
+      "grossAmount": 10813.82,
+      "payableAmount": 10813.82,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9011.52,
+          "taxAmount": 1802.3
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH85009994247286435",
+      "reference": null
+    }
+  }
+}

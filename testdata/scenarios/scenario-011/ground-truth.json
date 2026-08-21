@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0011",
+      "issueDate": "2026-04-18",
+      "dueDate": "2026-06-02"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-621380",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Balkan Logistics d.o.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "CZ951136435"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Prague",
+          "postalCode": "11000",
+          "country": "CZ"
+        }
+      },
+      "customer": {
+        "name": "Orion Pharmaceuticals SA",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SK326969176"
+          }
+        ],
+        "address": {
+          "street": "Ulica Kralja Petra 5",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "PVC Conduit Pipe",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-85844"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9735491614993"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 14.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 207.64,
+          "netAmount": 2744.7,
+          "allowanceTotal": 162.26,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Aluminium Extrusion Profile",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-73370"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 14.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 116.92,
+          "netAmount": 1636.88,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 4381.58,
+      "taxAmount": 712.63,
+      "allowanceTotal": 162.26,
+      "chargeTotal": 0.0,
+      "grossAmount": 5094.21,
+      "payableAmount": 5094.21,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 2744.7,
+          "taxAmount": 548.94
+        },
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 1636.88,
+          "taxAmount": 163.69
+        }
+      ]
+    },
+    "payment": {
+      "means": "SEPA_CREDIT_TRANSFER",
+      "account": "CH23008114834570867",
+      "reference": null
+    }
+  }
+}

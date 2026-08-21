@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0047",
+      "issueDate": "2026-02-27",
+      "dueDate": "2026-03-13"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-282685",
+      "contractReference": null
+    },
+    "parties": {
+      "supplier": {
+        "name": "Pannonia Chemicals Kft.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR776471858"
+          }
+        ],
+        "address": {
+          "street": "Bulevar Oslobodjenja 98",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Highland Distribution Ltd",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "SK262999850"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Bratislava",
+          "postalCode": "81101",
+          "country": "SK"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-43190"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 8.0,
+          "unit": "BOX"
+        },
+        "pricing": {
+          "unitPrice": 163.18,
+          "netAmount": 1280.57,
+          "allowanceTotal": 24.87,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "LED Panel Light",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-54841"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "9119317252965"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 27.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 408.48,
+          "netAmount": 10755.58,
+          "allowanceTotal": 273.38,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Steel Fastener Kit",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-43670"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "2838048893202"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 41.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 49.03,
+          "netAmount": 2010.23,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 10.0,
+          "category": "Reduced",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "4",
+        "product": {
+          "name": "Pallet Wrap Film Roll",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-70368"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "3465725699021"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 24.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 350.66,
+          "netAmount": 8395.3,
+          "allowanceTotal": 20.54,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 22450.66,
+      "taxAmount": 3083.7,
+      "allowanceTotal": 318.79,
+      "chargeTotal": 8.98,
+      "grossAmount": 25534.36,
+      "payableAmount": 25534.36,
+      "taxBreakdown": [
+        {
+          "category": "Reduced",
+          "rate": 10.0,
+          "taxableAmount": 14046.38,
+          "taxAmount": 1404.64
+        },
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 8395.3,
+          "taxAmount": 1679.06
+        }
+      ]
+    },
+    "payment": {
+      "means": "CARD",
+      "account": "CH50001825962318602",
+      "reference": null
+    }
+  }
+}

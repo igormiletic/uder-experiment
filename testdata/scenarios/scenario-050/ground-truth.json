@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "invoice": {
+    "identity": {
+      "number": "INV-2026-0050",
+      "issueDate": "2026-02-02",
+      "dueDate": "2026-04-03"
+    },
+    "commercialContext": {
+      "currency": "EUR",
+      "purchaseOrderReference": "PO-656935",
+      "contractReference": "CTR-6094"
+    },
+    "parties": {
+      "supplier": {
+        "name": "Carpathian Machinery s.r.o.",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "HR878612743"
+          }
+        ],
+        "address": {
+          "street": "Via Roma 22",
+          "city": "Zagreb",
+          "postalCode": "10000",
+          "country": "HR"
+        }
+      },
+      "customer": {
+        "name": "Vertex Construction plc",
+        "identifiers": [
+          {
+            "scheme": "VAT",
+            "value": "AT157976938"
+          }
+        ],
+        "address": {
+          "street": "Rue de Commerce 45",
+          "city": "Vienna",
+          "postalCode": "1010",
+          "country": "AT"
+        }
+      }
+    },
+    "items": [
+      {
+        "lineId": "1",
+        "product": {
+          "name": "Industrial Filter Cartridge",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-26926"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 5.0,
+          "unit": "EA"
+        },
+        "pricing": {
+          "unitPrice": 344.05,
+          "netAmount": 1730.4,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 10.15
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "2",
+        "product": {
+          "name": "Insulated Copper Cable (100m)",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-84015"
+            },
+            {
+              "scheme": "GTIN",
+              "value": "1068045432963"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 32.0,
+          "unit": "LTR"
+        },
+        "pricing": {
+          "unitPrice": 155.71,
+          "netAmount": 4408.52,
+          "allowanceTotal": 574.2,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 0.0,
+          "category": "ZeroRated",
+          "exempt": true,
+          "exemptionReason": null
+        }
+      },
+      {
+        "lineId": "3",
+        "product": {
+          "name": "Safety Valve Assembly",
+          "identifiers": [
+            {
+              "scheme": "SKU",
+              "value": "SKU-76114"
+            }
+          ]
+        },
+        "quantity": {
+          "value": 41.0,
+          "unit": "MTR"
+        },
+        "pricing": {
+          "unitPrice": 189.25,
+          "netAmount": 7759.25,
+          "allowanceTotal": 0.0,
+          "chargeTotal": 0.0
+        },
+        "taxation": {
+          "rate": 20.0,
+          "category": "Standard",
+          "exempt": false,
+          "exemptionReason": null
+        }
+      }
+    ],
+    "financialSummary": {
+      "netAmount": 13905.31,
+      "taxAmount": 1897.93,
+      "allowanceTotal": 580.33,
+      "chargeTotal": 23.42,
+      "grossAmount": 15803.24,
+      "payableAmount": 15803.24,
+      "taxBreakdown": [
+        {
+          "category": "Standard",
+          "rate": 20.0,
+          "taxableAmount": 9489.65,
+          "taxAmount": 1897.93
+        },
+        {
+          "category": "ZeroRated",
+          "rate": 0.0,
+          "taxableAmount": 4408.52,
+          "taxAmount": 0.0
+        }
+      ]
+    },
+    "payment": {
+      "means": "BANK_TRANSFER",
+      "account": "CH24009878914344335",
+      "reference": "RF80090966"
+    }
+  }
+}
