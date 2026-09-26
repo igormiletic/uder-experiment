@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "UDER Experiment: AI-Assisted Invoice Transformation Evaluation Framework"
+type: software
+version: 0.1.0
+license: MIT
+date-released: 2026-09-26
+authors:
+  - family-names: Miletic
+    given-names: Igor
+abstract: >-
+  A reproducible framework for evaluating AI-assisted transformation of heterogeneous
+  e-invoice representations (UBL, UN/CEFACT CII, OAGIS-derived JSON) into a common local
+  invoice model, with ground-truth-based, non-AI-judged metrics.
+keywords:
+  - e-invoicing
+  - LLM evaluation
+  - semantic interoperability
+  - UBL
+  - UN/CEFACT CII

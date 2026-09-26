@@ -48,24 +48,37 @@ def _num(x, default=0.0) -> float:
         return default
 
 
+def _dict(x) -> dict:
+    """Coerce possibly-malformed AI output to a dict for safe .get() access.
+
+    Real LLM output is only loosely schema-guided (json_object mode, not a
+    strict json_schema), so a nested field that should be an object can come
+    back as a bare number, string, or None -- this must not crash the run.
+    """
+    return x if isinstance(x, dict) else {}
+
+
 def check_invoice_consistency(canonical: dict, tolerance: float = 0.02) -> ConsistencyReport:
     report = ConsistencyReport()
-    invoice = canonical.get("invoice", canonical) if canonical else {}
+    invoice = _dict(canonical.get("invoice", canonical) if canonical else {})
     if not invoice:
         return report
 
     for item in invoice.get("items", []) or []:
-        qty = _num(item.get("quantity", {}).get("value"))
-        unit_price = _num(item.get("pricing", {}).get("unitPrice"))
-        allowance = _num(item.get("pricing", {}).get("allowanceTotal"))
-        charge = _num(item.get("pricing", {}).get("chargeTotal"))
-        actual_net = _num(item.get("pricing", {}).get("netAmount"))
+        item = _dict(item)
+        qty = _num(_dict(item.get("quantity")).get("value"))
+        pricing = _dict(item.get("pricing"))
+        unit_price = _num(pricing.get("unitPrice"))
+        allowance = _num(pricing.get("allowanceTotal"))
+        charge = _num(pricing.get("chargeTotal"))
+        actual_net = _num(pricing.get("netAmount"))
         expected_net = qty * unit_price - allowance + charge
         line_id = item.get("lineId", "?")
         report.checks.append(_check(f"line[{line_id}].netAmount", expected_net, actual_net, tolerance))
 
-    fs = invoice.get("financialSummary", {}) or {}
+    fs = _dict(invoice.get("financialSummary"))
     for entry in fs.get("taxBreakdown", []) or []:
+        entry = _dict(entry)
         taxable = _num(entry.get("taxableAmount"))
         rate = _num(entry.get("rate"))
         actual_tax = _num(entry.get("taxAmount"))

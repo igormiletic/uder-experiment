@@ -123,6 +123,8 @@ def extract_features(canonical: dict) -> dict[str, SemanticFeature]:
             features[path] = SemanticFeature(path, value, _value_type(value), weight, required)
 
     for idx, item in enumerate(invoice.get("items", []) or []):
+        if not isinstance(item, dict):
+            continue
         key = item.get("lineId") or f"pos{idx}"
         base = f"items[{key}]"
         for sub_path, (weight, required) in _ITEM_SPEC.items():
@@ -135,6 +137,8 @@ def extract_features(canonical: dict) -> dict[str, SemanticFeature]:
                 features[full_path] = SemanticFeature(full_path, value, _value_type(value), weight, required)
 
     for idx, entry in enumerate(invoice.get("financialSummary", {}).get("taxBreakdown", []) or []):
+        if not isinstance(entry, dict):
+            continue
         key = entry.get("category") or f"pos{idx}"
         base = f"financialSummary.taxBreakdown[{key}]"
         for sub_path, (weight, required) in _TAX_BREAKDOWN_SPEC.items():

@@ -1,5 +1,8 @@
 # UDER Experiment: AI-Assisted Invoice Transformation Evaluation Framework
 
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
+
 A research evaluation framework for the question:
 
 > Can AI-assisted transformation convert heterogeneous invoice representations from multiple
@@ -16,6 +19,38 @@ implementation) and `ldc` (a Java/Spring LDC implementation, including a real Sw
 `LLMService`). This framework does not depend on either at runtime; it re-implements the same
 request-request propagation protocol as an isolated, reproducible harness so experiments don't
 require a live database, Kafka, or a running Java service.
+
+## Contents
+
+1. [Quick start](#quick-start)
+2. [Architecture recap](#architecture-recap)
+3. [Repository layout](#repository-layout)
+4. [Setup](#setup)
+5. [Dataset structure](#1-dataset-structure) · [generation](#2-how-to-generate-the-dataset) · [ground truth](#3-how-ground-truth-works)
+6. [Running the test suite](#4-running-the-deterministic-test-suite)
+7. [Configuring a real AI provider](#5-configuring-a-real-ai-provider-optional)
+8. [Running experiments](#6-running-experiments)
+9. [Metrics](#7-how-each-metric-is-calculated)
+10. [Reproducing tables and figures](#8-reproducing-the-tables-and-figures)
+11. [Output reference](#output-reference)
+12. [Reproducibility checklist](#reproducibility-checklist)
+13. [Assumptions and deviations](#assumptions-and-deviations) · [Citing](#citing) · [License](#license)
+
+## Quick start
+
+No AI credentials needed -- this exercises the full pipeline with the deterministic and mock transformers:
+
+```bash
+git clone <repo-url> && cd uder-experiment
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev]"
+pytest -q                                                   # 37 tests
+uder-experiment run --testdata testdata/scenarios --output results
+uder-experiment analyze                                     # -> results/tables/
+uder-experiment figures                                     # -> results/figures/
+```
+
+`python -m uder_experiment.cli ...` is equivalent to `uder-experiment ...` everywhere below.
 
 ## Architecture recap
 
@@ -46,17 +81,20 @@ src/uder_experiment/
   metrics/       feature extraction, preservation/precision/F1, calibration, consistency checks
   experiment/    matrix definition, runner, JSONL storage, statistical analysis, figures
   cli.py         `uder-experiment generate|run|analyze|figures`
-testdata/scenarios/   generated dataset (50 scenarios x {ground-truth, ubl, cii, source-c})
-results/              generated experiment output (JSONL, tables, figures)
+testdata/scenarios/   committed dataset (50 scenarios x {ground-truth, ubl, cii, source-c})
+results/              experiment output (JSONL, tables, figures) -- git-ignored, regenerate via the CLI
 tests/                pytest suite: protocol, data, transformation, metrics, integration
+.env.example          template for the optional real-AI environment variables
+CITATION.cff          citation metadata
 ```
 
 ## Setup
 
+Requires Python >= 3.11.
+
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
+pip install -e ".[dev]"        # or: pip install -r requirements.txt && pip install -e .
 ```
 
 ## 1. Dataset structure
@@ -129,52 +167,90 @@ preservation=1, Brier/ECE=0 for calibrated synthetic predictions, etc.).
 ## 5. Configuring a real AI provider (optional)
 
 The real transformer ([`transform/real_ai.py`](src/uder_experiment/transform/real_ai.py)) is a
-generic OpenAI-compatible client, fully optional and env-gated:
+generic OpenAI-compatible chat-completions client, fully optional and env-gated. Copy
+[`.env.example`](.env.example) to `.env` (git-ignored) and load it, or export directly:
 
 ```bash
 export AI_API_KEY=sk-...
 export AI_API_BASE_URL=https://your-openai-compatible-endpoint/v1   # optional
-export AI_MODEL=gpt-4o-mini                                          # optional
+export AI_MODEL=gpt-4o-mini                                          # optional (default)
+export AI_MIN_INTERVAL_SECONDS=5                                     # optional: min gap between calls
+export AI_REQUEST_TIMEOUT_SECONDS=60                                 # optional: per-call timeout
 ```
 
-If `AI_API_KEY` is unset (or the `openai` package isn't installed), `RealAITransformer.is_available()`
-returns `False` and nothing in the framework requires it -- the experiment runner and all tests
-use `DeterministicTransformer` / `MockAITransformer` by default. The model is asked to return
-`{"transformedData": ..., "confidence": ..., "fieldConfidences": {...}}`; these are explicitly
-labeled confidence *estimates*, not calibrated probabilities, per the experimental design.
+| Variable | Default | Meaning |
+|---|---|---|
+| `AI_API_KEY` | *(unset)* | Required for `--use-real-ai`. |
+| `AI_API_BASE_URL` | provider default | Any OpenAI-compatible endpoint. |
+| `AI_MODEL` | `gpt-4o-mini` | Model name; `--ai-model` overrides it. |
+| `AI_MIN_INTERVAL_SECONDS` | `5` | Global rate limit between LLM calls (`--min-interval` overrides). |
+| `AI_REQUEST_TIMEOUT_SECONDS` | `60` | Per-call timeout before retry/skip (`--request-timeout` overrides). |
+
+If `AI_API_KEY` is unset (or `openai` isn't installed), `is_available()` returns `False`, the CLI
+refuses `--use-real-ai` with a clear message, and nothing else in the framework requires it. The
+model is asked to return `{"transformedData": ..., "confidence": ..., "fieldConfidences": {...}}`
+in JSON-object mode; failed calls are retried (2 retries), and these confidences are explicitly
+confidence *estimates* (self-assessments), not calibrated probabilities.
 
 ## 6. Running experiments
 
 ```bash
 # deterministic / mock evaluation (no AI credentials needed)
-python -m uder_experiment.cli run \
+uder-experiment run \
   --testdata testdata/scenarios --output results \
   --modes deterministic,isolated,aggregated,incremental \
   --error-rate 0.15
+
+# real LLM evaluation (costs money, non-deterministic; see notes below)
+uder-experiment run --use-real-ai --ai-model gpt-4o-mini --temperature 0 \
+  --prompt-version v1 --modes isolated,aggregated,incremental --output results-real
 ```
 
 This runs the full `{ubl,cii,source-c} x {simple,medium,complex} x {deterministic,isolated,aggregated,incremental}`
 matrix (600 runs against the 50-scenario dataset) end to end: UCS propagation -> LDC aggregation
--> transform -> schema validation -> metric evaluation -> JSONL persistence. `--sources`,
-`--complexities`, and `--modes` accept comma-separated subsets to narrow the matrix.
+-> transform -> schema validation -> metric evaluation -> JSONL persistence.
+
+### `run` options
+
+| Option | Default | Description |
+|---|---|---|
+| `--testdata` | `testdata/scenarios` | Dataset directory. |
+| `--output` | `results` | Output directory (created if missing). |
+| `--sources` | all | Comma-separated subset of `ubl,cii,source-c`. |
+| `--complexities` | all | Subset of `simple,medium,complex`. |
+| `--modes` | all | Subset of `deterministic,isolated,aggregated,incremental`. |
+| `--error-rate` | `0.15` | Simulated error rate of the **mock** AI transformer (ignored with `--use-real-ai`). |
+| `--ai-model` | `mock-deterministic-v1` | Model label recorded in results; with `--use-real-ai` a real model name (falls back to `AI_MODEL`). |
+| `--prompt-version` | `v1` | Label recorded with each run, for prompt A/B comparisons. |
+| `--temperature` | `0.0` | Sampling temperature (real AI). |
+| `--use-real-ai` | off | Use `RealAITransformer` for AI modes (`isolated`/`aggregated`/`incremental`). |
+| `--min-interval` / `--request-timeout` | env / 5s / 60s | Real-AI rate limit and per-call timeout. |
+| `-v` (global, before the subcommand) | off | DEBUG logging incl. raw LLM responses. |
+
+Example: `uder-experiment -v run --sources ubl --complexities simple --modes aggregated --use-real-ai`.
 
 The four transformation modes correspond to the four baselines the research question compares:
 `deterministic` (Baseline 1, rule-based, no AI), `isolated` (Baseline 2, each UDER entity
-transformed independently), `aggregated` (Baseline 3, transform after full aggregation),
-`incremental` (Baseline 4, refined as each entity arrives).
+transformed independently, then merged), `aggregated` (Baseline 3, transform after full
+aggregation), `incremental` (Baseline 4, refined as each entity arrives; only the final call is
+scored).
 
-To use the real AI transformer instead of the mock, set the environment variables from step 5
-and swap the transformer construction in `experiment/runner.py::_build_transformer`
-(kept as an explicit, reviewable code change rather than a silent runtime auto-switch, since
-real-AI runs cost money and produce non-deterministic output).
+**Robustness.** If a single (scenario, source, mode) combination raises, the error is logged and a
+placeholder record (`accepted=false`, zero scores, `error` populated) is written so the matrix
+continues and row counts stay complete. Filter on `error` when analysing real-AI runs.
+
+**Real-AI cost.** A full real-AI matrix is 450 AI runs (`isolated` makes one call per entity,
+`incremental` one per entity as well), throttled by `AI_MIN_INTERVAL_SECONDS`. Start with a narrow
+subset (`--sources`, `--complexities`) to estimate cost and time first.
 
 **Note on the mock-transformer numbers themselves**: `MockAITransformer` seeds its simulated
 error injection off `(entity ids, mode, seed_offset)` (see `transform/mock_ai.py::_seed_for`) --
 including the mode label. This means "aggregated" vs. "incremental" deltas you see in
 mock-generated results reflect *different simulated error draws*, not a proven architectural
 capability difference. The mock transformer's job is to validate the metrics/pipeline machinery
-deterministically (Section 11 Mode B); the actual scientific answer to the research question
-requires running the matrix with `RealAITransformer` against a real model.
+deterministically; the actual scientific answer to the research question requires running the
+matrix with `--use-real-ai` against a real model. Use a separate `--output` directory per model or
+prompt version so runs are never mixed.
 
 ## 7. How each metric is calculated
 
@@ -211,19 +287,48 @@ No metric in `metrics/` calls an AI model (spec Section 23): correctness is alwa
 ## 8. Reproducing the tables and figures
 
 ```bash
-python -m uder_experiment.cli analyze --results results --testdata testdata/scenarios --output results/tables
-python -m uder_experiment.cli figures --results results --output results/figures
+uder-experiment analyze --results results --testdata testdata/scenarios --output results/tables
+uder-experiment figures --results results --output results/figures
 ```
 
-Both read only from the persisted `results/experiments.jsonl` / `results/field_results.jsonl` --
-never re-run experiments -- so they're reproducible from any prior run's output.
+Both read only the persisted JSONL in `--results` -- they never re-run experiments -- so they are
+reproducible from any prior run's output.
 
-`results/tables/` gets `table{1..5}_*.{csv,md}` (dataset composition, transformation quality,
+`analyze` writes `table{1..5}_*.{csv,md}` (dataset composition, transformation quality,
 confidence quality, performance, complexity impact) plus `summary_statistics.csv`
 (count/mean/median/std/min/max/p50/p95/p99/95%-CI per metric, grouped by source standard and
-transformation mode). `results/figures/` gets the 10 required PNGs (loss distribution,
-preservation by mode, precision-vs-preservation, confidence-vs-correctness, reliability diagram,
-accuracy/coverage-vs-threshold, latency distribution, quality-by-complexity, incremental-vs-aggregated).
+transformation mode). `figures` writes 10 PNGs (information loss by standard, preservation by mode,
+precision-vs-preservation, confidence-vs-correctness, reliability diagram, accuracy- and
+coverage-vs-threshold, latency distribution, quality-by-complexity, incremental-vs-aggregated).
+
+## Output reference
+
+```
+results/
+  experiments.jsonl        one ExperimentRecord per (scenario, source, mode) run
+  field_results.jsonl      one FieldResultRecord per compared feature per run
+  tables/                  table1..table5 (.csv, .md) + summary_statistics.csv
+  figures/                 01_*.png ... 10_*.png
+```
+
+Key `experiments.jsonl` fields: `source_standard`, `invoice_scenario_id`, `complexity_level`,
+`transformation_mode`, `ai_model`, `prompt_version`, `temperature`, `semantic_preservation`,
+`information_loss`, `semantic_precision`, `semantic_f1`, `value_accuracy`, `global_confidence`,
+`brier_score`, `calibration_error`, `schema_valid`, `consistency_score`, `latency_*_ms`,
+`accepted`, `error`. `field_results.jsonl` joins on `experiment_id` and holds per-field
+`path`, `weight`, `required`, `expected_value`, `actual_value`, `correct`.
+
+## Reproducibility checklist
+
+- Dataset: `uder-experiment generate --seed 42 --scenarios 50` regenerates the committed dataset byte-for-byte.
+- Deterministic and mock modes are fully seeded; re-running gives identical metrics (latency aside).
+- For real-AI runs record `--ai-model`, `--prompt-version`, `--temperature`, the endpoint, and the date
+  (model behaviour drifts); these are stored per record except endpoint/date. LLM output is not
+  guaranteed reproducible even at temperature 0 -- repeat runs and report variance.
+- Keep each run in its own `--output` directory and archive the JSONL files with your paper.
+- Extending: add a transformer by implementing `transform/base.py::Transformer`; add a source standard
+  by adding a renderer in `scenario/` and a converter in `uder/`; add a metric under `metrics/`.
+  Run `pytest -q` before and after.
 
 ## Assumptions and deviations
 
@@ -246,3 +351,12 @@ accuracy/coverage-vs-threshold, latency distribution, quality-by-complexity, inc
   target schema, not implemented here.
 - An AI-judge evaluator is intentionally **not** implemented, per spec Section 23's constraint
   that AI output must not be judged by another unvalidated AI model.
+
+## Citing
+
+If you use this framework in academic work, please cite it using [`CITATION.cff`](CITATION.cff)
+(GitHub's "Cite this repository" button).
+
+## License
+
+Released under the [MIT License](LICENSE).

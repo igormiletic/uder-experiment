@@ -21,16 +21,32 @@ def _cmd_generate(args: argparse.Namespace) -> None:
 
 
 def _cmd_run(args: argparse.Namespace) -> None:
+    import os
+
     from uder_experiment.experiment.runner import run_full_matrix
 
     modes = args.modes.split(",") if args.modes else None
     sources = args.sources.split(",") if args.sources else None
     complexities = args.complexities.split(",") if args.complexities else None
+    if args.use_real_ai:
+        if args.min_interval is not None:
+            os.environ["AI_MIN_INTERVAL_SECONDS"] = str(args.min_interval)
+        if args.request_timeout is not None:
+            os.environ["AI_REQUEST_TIMEOUT_SECONDS"] = str(args.request_timeout)
+        from uder_experiment.transform.real_ai import is_available
+        if not is_available():
+            raise SystemExit(
+                "--use-real-ai requires AI_API_KEY to be set and the `openai` package installed; "
+                "see README section 5."
+            )
+        logger.info("Real AI transformer enabled (min interval between calls: %ss, per-call timeout: %ss)",
+                    os.environ.get("AI_MIN_INTERVAL_SECONDS", "5"),
+                    os.environ.get("AI_REQUEST_TIMEOUT_SECONDS", "60"))
     logger.info("Running experiment matrix: sources=%s complexities=%s modes=%s", sources, complexities, modes)
     records = asyncio.run(run_full_matrix(
         args.testdata, args.output, sources=sources, complexities=complexities, modes=modes,
         error_rate=args.error_rate, ai_model=args.ai_model, prompt_version=args.prompt_version,
-        temperature=args.temperature,
+        temperature=args.temperature, use_real_ai=args.use_real_ai,
     ))
     logger.info("Completed %d experiment runs -> %s", len(records), args.output)
 
@@ -51,6 +67,8 @@ def _cmd_figures(args: argparse.Namespace) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="uder-experiment")
+    p.add_argument("-v", "--verbose", action="store_true",
+                    help="DEBUG-level logging, including raw LLM response bodies for --use-real-ai runs")
     sub = p.add_subparsers(dest="command", required=True)
 
     g = sub.add_parser("generate", help="generate the reproducible scenario dataset")
@@ -69,6 +87,16 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument("--ai-model", default="mock-deterministic-v1")
     r.add_argument("--prompt-version", default="v1")
     r.add_argument("--temperature", type=float, default=0.0)
+    r.add_argument("--use-real-ai", action="store_true",
+                    help="use RealAITransformer (requires AI_API_KEY) instead of MockAITransformer "
+                         "for AI-based modes (isolated/aggregated/incremental)")
+    r.add_argument("--min-interval", type=float, default=None,
+                    help="minimum seconds between real LLM calls (default: AI_MIN_INTERVAL_SECONDS env "
+                         "var, or 5.0); only relevant with --use-real-ai")
+    r.add_argument("--request-timeout", type=float, default=None,
+                    help="max seconds to wait for a single LLM call before abandoning it and retrying/"
+                         "moving on (default: AI_REQUEST_TIMEOUT_SECONDS env var, or 60.0); only "
+                         "relevant with --use-real-ai")
     r.set_defaults(func=_cmd_run)
 
     a = sub.add_parser("analyze", help="compute statistics and Tables 1-5")
@@ -88,6 +116,8 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if getattr(args, "verbose", False):
+        logging.getLogger("uder_experiment").setLevel(logging.DEBUG)
     args.func(args)
     return 0
 

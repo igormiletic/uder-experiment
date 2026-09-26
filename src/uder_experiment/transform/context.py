@@ -26,3 +26,7 @@ class TransformationContext:
     instructions: str = ""  # I
     provenance: dict = field(default_factory=dict)  # P: transaction/source provenance info
     history: list[dict] = field(default_factory=list)  # H: previously aggregated entity context (incremental refinement)
+    # Whether this call's output is the one that will actually be scored/returned, as opposed to
+    # an intermediate isolated/incremental per-entity call whose output is expected to be
+    # partial (by design -- see SYSTEM_PROMPT) and gets merged/superseded rather than used as-is.
+    is_final: bool = True

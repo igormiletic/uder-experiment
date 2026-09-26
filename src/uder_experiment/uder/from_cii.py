@@ -23,6 +23,15 @@ def _text(el, path, default=None):
     return found.text.strip() if found is not None and found.text else default
 
 
+def _iso_date(ccyymmdd: str | None) -> str | None:
+    """CII encodes dates as udt:DateTimeString format="102" (CCYYMMDD). Normalize to ISO 8601
+    (YYYY-MM-DD) here so the UDER layer presents a source-standard-independent date format, same
+    as the UBL/Source-C parsers (whose native formats are already ISO)."""
+    if not ccyymmdd or len(ccyymmdd) != 8 or not ccyymmdd.isdigit():
+        return ccyymmdd
+    return f"{ccyymmdd[0:4]}-{ccyymmdd[4:6]}-{ccyymmdd[6:8]}"
+
+
 def _parse_party(party_el, number: str, role: str) -> UDEREntity:
     name = _text(party_el, _r("Name"))
     tax_reg = party_el.find(_r("SpecifiedTaxRegistration"))
@@ -146,8 +155,8 @@ def parse_cii_to_uder(xml_text: str) -> UDERGraph:
     due_date = _text(settlement, f"{_r('SpecifiedTradePaymentTerms')}/{_r('DueDateDateTime')}/{{{UDT}}}DateTimeString")
     invoice_props = {
         "number": number,
-        "issueDate": _text(root, f"{_s('ExchangedDocument')}/{_r('IssueDateTime')}/{{{UDT}}}DateTimeString"),
-        "dueDate": due_date,
+        "issueDate": _iso_date(_text(root, f"{_s('ExchangedDocument')}/{_r('IssueDateTime')}/{{{UDT}}}DateTimeString")),
+        "dueDate": _iso_date(due_date),
         "currency": _text(settlement, _r("InvoiceCurrencyCode")),
         "purchaseOrderReference": _text(agreement, f"{_r('BuyerOrderReferencedDocument')}/{_r('IssuerAssignedID')}"),
         "contractReference": _text(agreement, f"{_r('ContractReferencedDocument')}/{_r('IssuerAssignedID')}"),

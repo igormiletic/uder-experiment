@@ -2,11 +2,14 @@
 from __future__ import annotations
 
 import json
+import logging
 import time
 import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 from uder_experiment.experiment.matrix import build_matrix
 from uder_experiment.experiment.merge import merge_partial_canonicals
@@ -57,9 +60,24 @@ def load_scenarios(testdata_dir: str | Path) -> list[ScenarioFiles]:
     return scenarios
 
 
-def _build_transformer(mode: str, error_rate: float, ai_model: str):
+def _build_transformer(mode: str, error_rate: float, ai_model: str | None, *,
+                        use_real_ai: bool = False, prompt_version: str = "v1",
+                        temperature: float = 0.0):
     if mode == "deterministic":
         return DeterministicTransformer()
+    if use_real_ai:
+        from uder_experiment.transform.real_ai import RealAITransformer, is_available
+        if not is_available():
+            raise RuntimeError(
+                "use_real_ai=True but RealAITransformer.is_available() is False -- "
+                "set AI_API_KEY (and optionally AI_API_BASE_URL / AI_MODEL) and ensure "
+                "the `openai` package is installed."
+            )
+        # Only pass an explicit model name through when the caller set one that isn't
+        # the mock-transformer default label -- otherwise let RealAITransformer resolve
+        # its own default (AI_MODEL env var, then "gpt-4o-mini").
+        real_model = ai_model if ai_model and ai_model != "mock-deterministic-v1" else None
+        return RealAITransformer(model=real_model, temperature=temperature, prompt_version=prompt_version)
     return MockAITransformer(error_rate=error_rate)
 
 
@@ -70,7 +88,10 @@ async def _execute_transform(transformer, mode: str, entities_ordered: list, mod
     if mode == "isolated":
         partials = []
         for e in entities_ordered:
-            ctx = TransformationContext(mode="isolated", model=model_cfg, target_schema=_TARGET_SCHEMA)
+            # Each per-entity call is intentionally partial (system prompt: populate only this
+            # entity's fields, leave the rest null) -- only the merged result below is "final".
+            ctx = TransformationContext(mode="isolated", model=model_cfg, target_schema=_TARGET_SCHEMA,
+                                         is_final=False)
             partials.append(await transformer.transform([e], _TARGET_SCHEMA, ctx))
         merged_data = merge_partial_canonicals([p.transformed_data for p in partials])
         field_conf: dict[str, float] = {}
@@ -90,10 +111,14 @@ async def _execute_transform(transformer, mode: str, entities_ordered: list, mod
     if mode == "incremental":
         history: list[dict] = []
         result = None
-        for e in entities_ordered:
-            ctx = TransformationContext(mode="incremental", model=model_cfg, target_schema=_TARGET_SCHEMA, history=history)
+        last_index = len(entities_ordered) - 1
+        for i, e in enumerate(entities_ordered):
+            # Only the call over the last entity produces the result that's actually scored --
+            # earlier calls are expected to be incomplete until all entities have streamed in.
+            ctx = TransformationContext(mode="incremental", model=model_cfg, target_schema=_TARGET_SCHEMA,
+                                         history=history, is_final=(i == last_index))
             result = await transformer.transform([e], _TARGET_SCHEMA, ctx)
-            history = history + [{"entities": [e]}]
+            history = history + [{"entities": [e.to_dict()]}]
         return result
 
     ctx = TransformationContext(mode=mode, model=model_cfg, target_schema=_TARGET_SCHEMA)
@@ -102,16 +127,21 @@ async def _execute_transform(transformer, mode: str, entities_ordered: list, mod
 
 async def run_single_experiment(scenario: ScenarioFiles, source: str, mode: str, *, error_rate: float,
                                  ai_model: str, prompt_version: str, temperature: float,
-                                 writer: JSONLWriter, field_writer: JSONLWriter) -> ExperimentRecord:
+                                 writer: JSONLWriter, field_writer: JSONLWriter,
+                                 use_real_ai: bool = False) -> ExperimentRecord:
+    logger.info("experiment start: scenario=%s source=%s mode=%s", scenario.scenario_id, source, mode)
     graph = _parse_source(source, scenario.files[source])
     ctx, tasks, aggregator = await run_transaction(graph)
 
     entities_ordered = sorted(ctx.received_entities.values(),
                                key=lambda e: ctx.provenance[e.entity_id][0].received_at)
 
-    transformer = _build_transformer(mode, error_rate, ai_model)
-    model_cfg = ModelConfig(provider="deterministic" if mode == "deterministic" else "mock",
-                             model="deterministic-rule-mapper" if mode == "deterministic" else ai_model,
+    transformer = _build_transformer(mode, error_rate, ai_model, use_real_ai=use_real_ai,
+                                      prompt_version=prompt_version, temperature=temperature)
+    resolved_model = getattr(transformer, "model", ai_model)
+    model_cfg = ModelConfig(provider="deterministic" if mode == "deterministic"
+                             else ("real" if use_real_ai else "mock"),
+                             model="deterministic-rule-mapper" if mode == "deterministic" else resolved_model,
                              temperature=temperature, prompt_version=prompt_version)
 
     t0 = time.perf_counter()
@@ -158,14 +188,38 @@ async def run_single_experiment(scenario: ScenarioFiles, source: str, mode: str,
         error=result.metadata.get("error"),
     )
     writer.write(record)
+    logger.info(
+        "experiment done: scenario=%s source=%s mode=%s accepted=%s preservation=%.2f error=%s",
+        scenario.scenario_id, source, mode, record.accepted, record.semantic_preservation, record.error,
+    )
     return record
+
+
+def _failed_experiment_record(scenario: ScenarioFiles, source: str, mode: str, ai_model: str,
+                               prompt_version: str, temperature: float, exc: Exception) -> ExperimentRecord:
+    """Placeholder record for an experiment that raised instead of returning a result.
+
+    Keeps the run's row count/order legible in the output files instead of silently
+    dropping the (scenario, source, mode) combination when we skip past it.
+    """
+    return ExperimentRecord(
+        experiment_id=f"{scenario.scenario_id}-{source}-{mode}-{uuid.uuid4().hex[:8]}",
+        timestamp=datetime.now(timezone.utc).isoformat(),
+        source_standard=source, invoice_scenario_id=scenario.scenario_id, complexity_level=scenario.complexity,
+        transaction_id="", transformation_mode=mode, ai_model=ai_model, prompt_version=prompt_version,
+        temperature=temperature, source_entity_count=0, received_entity_count=0, duplicate_count=0,
+        missing_entity_count=0, semantic_preservation=0.0, information_loss=1.0, semantic_precision=0.0,
+        semantic_f1=0.0, value_accuracy=0.0, global_confidence=0.0, brier_score=0.0, calibration_error=0.0,
+        schema_valid=False, consistency_score=0.0, latency_total_ms=0.0, latency_aggregation_ms=0.0,
+        latency_ai_ms=0.0, accepted=False, error=f"{type(exc).__name__}: {exc}",
+    )
 
 
 async def run_full_matrix(testdata_dir: str | Path, output_dir: str | Path, *,
                            sources: list[str] | None = None, complexities: list[str] | None = None,
                            modes: list[str] | None = None, error_rate: float = 0.15,
                            ai_model: str = "mock-deterministic-v1", prompt_version: str = "v1",
-                           temperature: float = 0.0) -> list[ExperimentRecord]:
+                           temperature: float = 0.0, use_real_ai: bool = False) -> list[ExperimentRecord]:
     scenarios = load_scenarios(testdata_dir)
     matrix = build_matrix(sources, complexities, modes)
     allowed = {(c.source_standard, c.mode) for c in matrix}
@@ -181,11 +235,21 @@ async def run_full_matrix(testdata_dir: str | Path, output_dir: str | Path, *,
             if scenario.complexity not in complexity_filter:
                 continue
             for source, mode in sorted(allowed):
-                record = await run_single_experiment(
-                    scenario, source, mode, error_rate=error_rate, ai_model=ai_model,
-                    prompt_version=prompt_version, temperature=temperature,
-                    writer=writer, field_writer=field_writer,
-                )
+                try:
+                    record = await run_single_experiment(
+                        scenario, source, mode, error_rate=error_rate, ai_model=ai_model,
+                        prompt_version=prompt_version, temperature=temperature,
+                        writer=writer, field_writer=field_writer, use_real_ai=use_real_ai,
+                    )
+                except Exception as exc:  # noqa: BLE001 -- one bad combination must not abort the matrix
+                    logger.error(
+                        "experiment raised, skipping and continuing with next: scenario=%s source=%s "
+                        "mode=%s error=%s: %s",
+                        scenario.scenario_id, source, mode, type(exc).__name__, exc, exc_info=True,
+                    )
+                    record = _failed_experiment_record(scenario, source, mode, ai_model, prompt_version,
+                                                        temperature, exc)
+                    writer.write(record)
                 records.append(record)
     finally:
         writer.close()
