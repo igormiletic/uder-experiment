@@ -25,7 +25,6 @@ htmlcov/
 
 # Scratch space and generated experiment output (regenerate with the CLI, see README)
 temp/
-results/
 
 # IDE / OS files
 .idea/
